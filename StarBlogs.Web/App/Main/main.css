@@ -1,0 +1,252 @@
+﻿html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+footer {
+  padding: 30px 0;
+}
+.error {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+#UsernameInput,
+#PasswordInput {
+  width: 130px;
+  margin-right: 8px;
+}
+.modal-open {
+  overflow: initial !important;
+}
+.hll {
+  background-color: #ffc;
+}
+.c {
+  color: #999;
+}
+.err {
+  color: #A00;
+  background-color: #FAA;
+}
+.k {
+  color: #069;
+}
+.o {
+  color: #555;
+}
+.cm {
+  color: #999;
+}
+.cp {
+  color: #099;
+}
+.c1 {
+  color: #999;
+}
+.cs {
+  color: #999;
+}
+.gd {
+  background-color: #FCC;
+  border: 1px solid #C00;
+}
+.ge {
+  font-style: italic;
+}
+.gr {
+  color: red;
+}
+.gh {
+  color: #030;
+}
+.gi {
+  background-color: #CFC;
+  border: 1px solid #0C0;
+}
+.go {
+  color: #AAA;
+}
+.gp {
+  color: #009;
+}
+.gu {
+  color: #030;
+}
+.gt {
+  color: #9C6;
+}
+.kc {
+  color: #069;
+}
+.kd {
+  color: #069;
+}
+.kn {
+  color: #069;
+}
+.kp {
+  color: #069;
+}
+.kr {
+  color: #069;
+}
+.kt {
+  color: #078;
+}
+.m {
+  color: #F60;
+}
+.s {
+  color: #d44950;
+}
+.na {
+  color: #4f9fcf;
+}
+.nb {
+  color: #366;
+}
+.nc {
+  color: #0A8;
+}
+.no {
+  color: #360;
+}
+.nd {
+  color: #99F;
+}
+.ni {
+  color: #999;
+}
+.ne {
+  color: #C00;
+}
+.nf {
+  color: #C0F;
+}
+.nl {
+  color: #99F;
+}
+.nn {
+  color: #0CF;
+}
+.nt {
+  color: #2f6f9f;
+}
+.nv {
+  color: #033;
+}
+.ow {
+  color: #000;
+}
+.w {
+  color: #bbb;
+}
+.wi {
+  color: #fff;
+}
+.mf {
+  color: #F60;
+}
+.mh {
+  color: #F60;
+}
+.mi {
+  color: #F60;
+}
+.mo {
+  color: #F60;
+}
+.sb {
+  color: #C30;
+}
+.sc {
+  color: #C30;
+}
+.sd {
+  color: #C30;
+  font-style: italic;
+}
+.s2 {
+  color: #C30;
+}
+.se {
+  color: #C30;
+}
+.sh {
+  color: #C30;
+}
+.si {
+  color: #A00;
+}
+.sx {
+  color: #C30;
+}
+.sr {
+  color: #3AA;
+}
+.s1 {
+  color: #C30;
+}
+.ss {
+  color: #FC3;
+}
+.bp {
+  color: #366;
+}
+.vc {
+  color: #033;
+}
+.vg {
+  color: #033;
+}
+.vi {
+  color: #033;
+}
+.il {
+  color: #F60;
+}
+.css .nt + .nt,
+.css .o,
+.css .o + .nt {
+  color: #999;
+}
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right {
+    right: 0;
+  }
+  .row-offcanvas-left {
+    left: 0;
+  }
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-right.active {
+    right: 50%;
+    /* 6 columns */
+  }
+  .row-offcanvas-left.active {
+    left: 50%;
+    /* 6 columns */
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    /* 6 columns */
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+﻿<form method="post" class="form-horizontal" name="blog_form" novalidate>
+    <div class="modal-header">
+        <h3 class="modal-title">{{vm.star.name}}的微博列表</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group " ng-class="{'has-error': blog_form.facebook.$dirty && blog_form.facebook.$invalid}">
+            <label for="starBlogUrl" class="col-sm-2 control-label">Facebook：</label>
+            <div class="col-sm-8">
+                <input type="text" id="facebook" ng-model="vm.provider1" class="form-control "  name="facebook" ng-maxlength=50 ng-focus />
+            </div>
+            <div class="col-sm-8 col-sm-offset-2" ng-show="blog_form.facebook.$invalid">
+                <div class="form-control-static">
+                    <div ng-messages="blog_form.blogUrl.$error">
+                        <small class="error" ng-message="maxlength">地址不能超过50个字符！</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group " ng-class="{'has-error': blog_form.twitter.$dirty && blog_form.twitter.$invalid}">
+            <label for="starBlogUrl" class="col-sm-2 control-label">Twitter：</label>
+            <div class="col-sm-8">
+                <input type="text" id="twitter" ng-model="vm.provider2" class="form-control " name="twitter" ng-maxlength=50 ng-focus />
+            </div>
+            <div class="col-sm-8 col-sm-offset-2" ng-show="blog_form.twitter.$invalid">
+                <div class="form-control-static">
+                    <div ng-messages="blog_form.blogUrl.$error">
+                        <small class="error" ng-message="maxlength">地址不能超过50个字符！</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group " ng-class="{'has-error': blog_form.instagram.$dirty && blog_form.instagram.$invalid}">
+            <label for="starBlogUrl" class="col-sm-2 control-label">Instagram：</label>
+            <div class="col-sm-8">
+                <input type="text" id="instagram" ng-model="vm.provider3" class="form-control " name="instagram" ng-maxlength=50 ng-focus />
+            </div>
+            <div class="col-sm-8 col-sm-offset-2" ng-show="blog_form.instagram.$invalid">
+                <div class="form-control-static">
+                    <div ng-messages="blog_form.blogUrl.$error">
+                        <small class="error" ng-message="maxlength">地址不能超过50个字符！</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="vm.save()">保存</button>
+        <button class="btn btn-warning" ng-click="vm.cancel()">关闭</button>
+    </div>
+</form>

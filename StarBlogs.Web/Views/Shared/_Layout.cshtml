@@ -1,0 +1,47 @@
+﻿@using System.Threading
+@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>StarBlogs</title>
+    @Styles.Render("~/Bundles/App/vendor/css")
+    @Styles.Render("~/Bundles/App/Main/css")
+    <script type="text/javascript">
+        var abp = abp || {}; abp.appPath = '@ApplicationPath';
+    </script>
+    <!--[if lt IE 9]>
+        <script src="@Url.Content("~/bower_components/html5shiv/dist/html5shiv.min.js")"></script>
+        <script src="@Url.Content("~/bower_components/respond/dest/respond.matchmedia.addListener.min.js")"></script>
+        <script src="@Url.Content("~/bower_components/respond/dest/respond.min.js")"></script>
+    <![endif]-->
+    @Scripts.Render("~/Bundles/App/vendor/js")
+    <script>
+        //Localizing momentjs
+        moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
+    </script>
+    <script src="~/api/AbpServiceProxies/GetAll?type=angular"></script>
+    <script src="~/AbpScripts/GetScripts" type="text/javascript"></script>
+   
+</head>
+<body >
+    <div ng-app="app">
+        @Html.Partial("_TopBar")
+        <div class="container">
+            @RenderBody()
+            <hr>
+            <footer>
+                <p>&copy; NorthDoor 2015</p>
+            </footer>
+        </div><!--/.container-->
+
+
+    </div>
+    @Scripts.Render("~/Bundles/App/Main/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@model StarBlogs.Web.Models.Account.WelcomeModel
+        <li>
+           
+            <a href="" data-toggle="dropdown">
+                欢迎，@Model.Username<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i> 个人信息
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home"></i> 我的基因
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Logout", "Account")"><i class="fa fa-sign-out"></i> 退出登录</a>
+                </li>
+            </ul>
+
+        </li>
+        

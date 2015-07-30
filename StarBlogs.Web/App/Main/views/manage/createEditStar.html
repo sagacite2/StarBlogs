@@ -1,0 +1,107 @@
+﻿<!-- 弹出框：创建一个明星 -->
+<!--<div class="modal" id="createEditStar" tabindex="-1" role="dialog" aria-labelledby="createEditStarLabel">
+    <div class="modal-dialog" role="document">-->
+        <form method="post" class="form-horizontal" name="star_form" novalidate>
+            <fieldset>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="createStarLabel">创建一个明星</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group" ng-class="{'has-error': star_form.name.$dirty && star_form.name.$invalid}">
+                            <label for="starName" class="col-sm-2 control-label">明星名：</label>
+                            <div class="col-sm-5">
+                                <input type="text" id="starName" ng-model="vm.star.name" class="form-control" placeholder="请输入明星原名（外文）" name="name" ng-minlength=2 ng-maxlength=30 required ng-focus />
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-control-static">
+                                    <small class="error" ng-show="star_form.name.$focused">
+                                        请输入明星原名（外文）
+                                    </small>
+                                    <div ng-messages="star_form.name.$error" ng-if="star_form.name.$dirty&& !star_form.name.$focused" ng-messages-include="~/html/ValidTemplate.html">
+                                        <small class="error" ng-message="minlength">名字至少要有2个字符！</small>
+                                        <small class="error" ng-message="maxlength">名字不能超过30个字符！</small>
+                                        <small class="error" ng-message="unique">该明星已入库！请直接编辑，不要添加</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group " ng-class="{'has-error': star_form.chineseName.$dirty && star_form.chineseName.$invalid}">
+                            <label for="starChineseName" class="col-sm-2 control-label">中文名：</label>
+                            <div class="col-sm-5">
+                                <input type="text" id="starChineseName" ng-model="vm.star.chineseName" class="form-control" placeholder="请输入中文名" name="chineseName" ng-minlength=1 ng-maxlength=20 required ng-focus />
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-control-static">
+                                    <small class="error" ng-show="star_form.chineseName.$focused">请输入中文名</small>
+                                    <div ng-messages="star_form.chineseName.$error" ng-messages-include="~/html/ValidTemplate.html" ng-if="star_form.chineseName.$dirty  && !star_form.chineseName.$focused">
+                                        <small class="error" ng-message="minlength">名字至少要有1个字符！</small>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group " ng-class="{'has-error': star_form.nickName.$dirty && star_form.nickName.$invalid}">
+                            <label for="starNickName" class="col-sm-2 control-label">昵称：</label>
+                            <div class="col-sm-5">
+                                <input type="text" id="starNickName" ng-model="vm.star.nickname" class="form-control" placeholder="明星昵称（可留空）" name="nickName" ng-maxlength=20 ng-focus />
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="form-control-static">
+                                    <small class="error" ng-show="star_form.nickName.$focused">明星昵称（可留空）</small>
+                                    <div ng-messages="star_form.nickName.$error" ng-messages-include="~/html/ValidTemplate.html" ng-if="star_form.nickName.$dirty  && !star_form.nickName.$focused"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="starGender" class="col-sm-2 control-label">性别：</label>
+                            <div class="col-sm-5">
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="gender1" value="0" ng-model="vm.star.gender"> 男
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" id="gender2" value="1" ng-model="vm.star.gender"> 女
+                                </label>
+                                <label class="radio-inline">
+                                    <input checked type="radio" name="gender" id="gender3" value="2" ng-model="vm.star.gender"> 团体（无性别）
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{'has-error': star_form.description.$dirty && star_form.description.$invalid}">
+                            <label for="starDescription" class="col-sm-2 control-label">简介：</label>
+                            <div class="col-sm-9">
+                                <textarea name="description" id="starDescription" class="form-control" rows="4" ng-model="vm.star.description" ng-maxlength=300 placeholder="应该使用中文简介，不要复制外文简介过来（300个字符以内）" ng-focus></textarea>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-2" ng-show="star_form.description.$invalid">
+                                <div class="form-control-static">
+                                    <div ng-messages="star_form.description.$error">
+                                        <small class="error" ng-message="maxlength">简介不能超过300个字符！</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group " ng-class="{'has-error': star_form.blogUrl.$dirty && star_form.blogUrl.$invalid}">
+                            <label for="starBlogUrl" class="col-sm-2 control-label">微博：</label>
+                            <div class="col-sm-7">
+                                <input ng-disabled="vm.star.id!=-1" type="text" id="starBlogUrl" ng-model="vm.star.blogUrl" class="form-control " placeholder="脸书、推特等地址格式如https://twitter.com/XHNews" name="blogUrl" ng-maxlength=50 ng-focus />
+                                
+                            </div>
+                            <div class="col-sm-1"><button ng-show="vm.star.id!=-1" type="button" class="btn btn-link" ng-click="showBlogsDialog()">微博管理 &raquo;</button></div>
+                            <div class="col-sm-8 col-sm-offset-2" ng-show="star_form.blogUrl.$invalid">
+                                <div class="form-control-static">
+                                    <div ng-messages="star_form.blogUrl.$error">
+                                        <small class="error" ng-message="maxlength">地址不能超过50个字符！</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" ng-click="vm.save()">保存</button>
+                        <button type="button" class="btn btn-warning" ng-click="vm.cancel()">关闭</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+ <!--  </div>
+</div>--> 
