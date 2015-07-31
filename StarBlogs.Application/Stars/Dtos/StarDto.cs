@@ -7,6 +7,7 @@ using Abp.AutoMapper;
 using StarBlogs.Helpers;
 using Abp.Runtime.Validation;
 using System.ComponentModel.DataAnnotations;
+using StarBlogs.Blogs.Dtos;
 
 namespace StarBlogs.Stars.Dtos
 {
@@ -23,7 +24,8 @@ namespace StarBlogs.Stars.Dtos
         public string ChineseName { get; set; }
         [Required]
         public Gender Gender { get; set; }
-        public ICollection<Blog> Blogs { get; set; }
+        public ICollection<BlogDto> Blogs { get; set; }
+        public ICollection<StarTagDto> Tags { get; set; }
         [Range(0, 300)]
         public string Description { get; set; }
         public bool IsBlocked { get; set; }

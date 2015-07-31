@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace StarBlogs.Stars
 {
-    [Table("StarCategoryTag")]
-    public class StarCategoryTag : Entity
+    [Table("StarTagSetting")]
+    public class StarTagSetting : Entity
     {
         public virtual string TagName { get; set; }
+        public virtual int ParentTagId { get; set; }
     }
 }

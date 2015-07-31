@@ -113,6 +113,18 @@
     <Compile Include="Migrations\201507301128138_AddDefaultTranslate.Designer.cs">
       <DependentUpon>201507301128138_AddDefaultTranslate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201507310420591_FixStarTag.cs" />
+    <Compile Include="Migrations\201507310420591_FixStarTag.Designer.cs">
+      <DependentUpon>201507310420591_FixStarTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507310433170_FixStarTag2.cs" />
+    <Compile Include="Migrations\201507310433170_FixStarTag2.Designer.cs">
+      <DependentUpon>201507310433170_FixStarTag2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201507310854252_FixstarTag3.cs" />
+    <Compile Include="Migrations\201507310854252_FixstarTag3.Designer.cs">
+      <DependentUpon>201507310854252_FixstarTag3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Data\InitialDataBuilder.cs" />
     <Compile Include="StarBlogsDataModule.cs" />
@@ -163,6 +175,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201507301128138_AddDefaultTranslate.resx">
       <DependentUpon>201507301128138_AddDefaultTranslate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507310420591_FixStarTag.resx">
+      <DependentUpon>201507310420591_FixStarTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507310433170_FixStarTag2.resx">
+      <DependentUpon>201507310433170_FixStarTag2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201507310854252_FixstarTag3.resx">
+      <DependentUpon>201507310854252_FixstarTag3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

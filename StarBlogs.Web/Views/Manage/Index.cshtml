@@ -22,7 +22,7 @@
             </ul>
         </div>
 
-        
+
         <div class="col-lg-1 col-md-2 col-sm-3">
 
             <a class="btn  btn-success" href="#" role="button" ng-click="showNewStarDialog()">添加一个明星</a>
@@ -34,22 +34,24 @@
         <div ng-repeat="star in vm.stars" class="col-xs-12 col-sm-6 col-md-4 col-lg-3" style="border:1px dotted #808080">
             <h3>{{star.name}} <span ng-show="star.isBlocked" class="label label-default">已屏蔽</span></h3>
             <p>中文名：{{star.chineseName}} </p>
-            <p style ="height:100px">
+            <p style="height:100px">
                 简介：{{star.description}}
-            </pstyle>
+            </p>
             <p>创建时间：<span class="text-muted">{{star.creationTime | fromNow}}</span></p>
-                <p ng-repeat ="blog in star.blogs"><i class="fa fa-{{blog.providerName}}"></i><a target="_blank" href="{{blog.url}}"> {{blog.url}}</a> </p>
+            <p ng-repeat="blog in star.blogs"><i class="fa fa-{{blog.providerName}}"></i><a target="_blank" href="{{blog.url}}"> {{blog.url}}</a> </p>
+            <p>标签：<span ng-repeat="tag in star.tags" class="label label-default">{{vm['tagName' + tag.tagId] }}</span> <a class="btn btn-success btn-xs" href="#" role="button" ng-click="showAddTagDialog(star.id)">管理标签 &raquo;</a></p>
             <p>
                 <a class="btn btn-primary btn-sm" href="#" role="button" ng-click="showEditStarDialog(star.id)">修改 &raquo;</a>
                 <a class="btn btn-info btn-sm" href="#" role="button" ng-click="showBlogsDialog(star.id)">微博管理</a>
                 <a ng-show="!star.isBlocked" class="btn btn-warning btn-sm" href="#" role="button" ng-click="blockStar(star.id,true)">
-                    屏蔽 &raquo;</a>
+                    屏蔽 &raquo;
+                </a>
                 <a ng-show="star.isBlocked" class="btn btn-warning btn-sm" href="#" role="button" ng-click="blockStar(star.id,false)">
                     解屏 &raquo;
                 </a>
 
-                    <a class="btn btn-danger btn-sm" href="#" role="button" ng-click="deleteStar(star.id)">删除 &raquo;</a>
-</p>
+                <a class="btn btn-danger btn-sm" href="#" role="button" ng-click="deleteStar(star.id)">删除 &raquo;</a>
+            </p>
         </div>
 
     </div>

@@ -92,7 +92,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stars\IStarRepository.cs" />
     <Compile Include="Stars\Star.cs" />
-    <Compile Include="Stars\StarCategoryTag.cs" />
+    <Compile Include="Stars\StarTag.cs" />
+    <Compile Include="Stars\StarTagSetting.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />

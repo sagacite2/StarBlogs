@@ -31,10 +31,10 @@ namespace StarBlogs.Stars
         /// </summary>
         public virtual string ChineseName { get; set; }
         public virtual Gender Gender { get; set; }
-
         // 头像图片地址，不一定需要记录到数据库
         //public virtual string PortraitUrl { get; set; }
         public virtual ICollection<Blog> Blogs { get; set; }
+        public virtual ICollection<StarTag> Tags { get; set; }
         /// <summary>
         /// 明星简介
         /// </summary>

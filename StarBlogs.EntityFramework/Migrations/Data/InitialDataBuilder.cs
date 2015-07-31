@@ -260,23 +260,24 @@ namespace StarBlogs.Migrations.Data
         private void CreateStarTag(StarBlogsDbContext context)
         {
             #region 创建初始的StarCategoryTags：明星归类标签
-            addStarCategoryTag(context, "影视");
-            addStarCategoryTag(context, "音乐");
-            addStarCategoryTag(context, "体育");
-            addStarCategoryTag(context, "歌手");
-            addStarCategoryTag(context, "官方");
+            addStarTagSetting(context, "影视");
+            addStarTagSetting(context, "音乐");
+            addStarTagSetting(context, "体育");
+            addStarTagSetting(context, "歌手");
+            addStarTagSetting(context, "官方");
             context.SaveChanges();
             #endregion
         }
-        private void addStarCategoryTag(StarBlogsDbContext context, string tagName)
+        private void addStarTagSetting(StarBlogsDbContext context, string tagName)
         {
-            var tag = context.StarCategoryTags.FirstOrDefault<StarCategoryTag>(t => t.TagName == tagName);
+            var tag = context.StarTagSettings.FirstOrDefault<StarTagSetting>(t => t.TagName == tagName);
             if (tag == null)
             {
-                tag = context.StarCategoryTags.Add(
-                    new StarCategoryTag
+                tag = context.StarTagSettings.Add(
+                    new StarTagSetting
                     {
                         TagName = tagName,
+                        ParentTagId = 0
                     });
             }
         }

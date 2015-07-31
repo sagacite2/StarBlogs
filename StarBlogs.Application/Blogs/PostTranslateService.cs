@@ -30,5 +30,6 @@ namespace StarBlogs.Blogs
         {
             _postRepository.Delete(input.Id);
         }
+        
     }
 }

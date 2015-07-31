@@ -92,6 +92,8 @@
     <Compile Include="Blogs\Dtos\BlogDto.cs" />
     <Compile Include="Blogs\Dtos\CreateUpdateBlogInput.cs" />
     <Compile Include="Blogs\Dtos\DeletePostInput.cs" />
+    <Compile Include="Blogs\Dtos\GetPostInput.cs" />
+    <Compile Include="Blogs\Dtos\PictureDto.cs" />
     <Compile Include="Blogs\Dtos\PostDto.cs" />
     <Compile Include="Blogs\IBlogAppService.cs" />
     <Compile Include="Blogs\IPostTranslateService.cs" />
@@ -104,6 +106,10 @@
     <Compile Include="Stars\Dtos\GetStarInput.cs" />
     <Compile Include="Stars\Dtos\GetStarsOutput.cs" />
     <Compile Include="Stars\Dtos\StarDto.cs" />
+    <Compile Include="Stars\Dtos\StarTagDto.cs" />
+    <Compile Include="Stars\Dtos\StarTagSettingDto.cs" />
+    <Compile Include="Stars\Dtos\StarTagSettingsOutput.cs" />
+    <Compile Include="Stars\Dtos\UpdateStarTagInput.cs" />
     <Compile Include="Stars\IStarAppService.cs" />
     <Compile Include="Stars\StarAppService.cs" />
     <Compile Include="Users\Dtos\UserDto.cs" />

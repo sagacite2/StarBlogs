@@ -3,9 +3,11 @@ using Abp.Application.Services.Dto;
 using Abp.Extensions;
 using System.Collections.Generic;
 using StarBlogs.Stars;
+using Abp.AutoMapper;
 
 namespace StarBlogs.Blogs.Dtos
 {
+    [AutoMapFrom(typeof(Blog))]
     public class BlogDto : EntityDto
     {
         public string Url { get; set; }

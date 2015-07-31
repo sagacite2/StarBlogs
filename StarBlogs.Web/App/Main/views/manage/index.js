@@ -1,5 +1,6 @@
 ﻿(function () {
     var controllerId = 'app.views.stars.index';
+    
     angular.module('app').controller(controllerId, ['abp.services.app.star', '$scope', '$modal', function (starService, $scope, $modal) {
         var vm = this;
         vm.sortingDirections = ['Name Asc', 'CreationTime Desc', 'LastUpdateTime Desc'];
@@ -10,6 +11,9 @@
         }
         vm.stars = [];
         vm.sorting = 'CreationTime Desc';
+        vm.items = {
+            starId: -1
+        };
         vm.loadStars = function (append) {
             var skipCount = append ? vm.stars.length : 0;
             abp.ui.setBusy(
@@ -29,10 +33,22 @@
                })
             );
         };
-        $scope.items = {
-            starId: -1
-        };
+       
+        vm.loadTagSettings = function () {
+            starService.getStarTagSettings().success(function (data) {
+                vm.starTagSettings = data;
+                var i = vm.starTagSettings.length;
+                while (i--) {
+                    var setting = vm.starTagSettings[i];
+                    vm['tagName' + setting.id] = setting.tagName;
+                }
+                vm.items.starTagSettings = vm.starTagSettings;
+            });
+        }
+        vm.loadTagSettings();
+       
         $scope.showNewStarDialog = function () {
+            vm.items.starId = -1;
             var modalInstance = $modal.open({
                 templateUrl: abp.appPath + 'App/Main/views/manage/createEditStar.html',
                 controller: 'app.views.stars.createEditStar as vm',
@@ -41,7 +57,7 @@
                 size: 'md',
                 resolve: {
                     items: function () {
-                        return $scope.items;
+                        return vm.items;
                     }
                 }
             });
@@ -51,7 +67,7 @@
         };
 
         $scope.showEditStarDialog = function (starId) {
-            $scope.items.starId = starId;
+            vm.items.starId = starId;
             var modalInstance = $modal.open({
                 templateUrl: abp.appPath + 'App/Main/views/manage/createEditStar.html',
                 controller: 'app.views.stars.createEditStar as vm',
@@ -60,11 +76,12 @@
                 size: 'md',
                 resolve: {
                     items: function () {
-                        return $scope.items;
+                        return vm.items;
                     }
                 }
             });
             modalInstance.result.then(function () {
+                vm.items.starId = -1;
                 vm.loadStars();
             });
         };
@@ -81,7 +98,7 @@
                        });
         };
         $scope.showBlogsDialog = function (starId) {
-            $scope.items.starId = starId;
+            vm.items.starId = starId;
             var modalInstance = $modal.open({
                 templateUrl: abp.appPath + 'App/Main/views/manage/createEditBlog.html',
                 controller: 'app.views.stars.createEditBlog as vm',
@@ -90,7 +107,26 @@
                 size: 'md',
                 resolve: {
                     items: function () {
-                        return $scope.items;
+                        return vm.items;
+                    }
+                }
+            });
+            modalInstance.result.then(function () {
+                vm.items.starId = -1;
+                vm.loadStars();
+            });
+        };
+        $scope.showAddTagDialog = function (starId) {
+            vm.items.starId = starId;
+            var modalInstance = $modal.open({
+                templateUrl: abp.appPath + 'App/Main/views/manage/manageStarTags.html',
+                controller: 'app.views.stars.manageStarTag as vm',
+                animation: false,
+                backdrop: false,
+                size: 'md',
+                resolve: {
+                    items: function () {
+                        return vm.items;
                     }
                 }
             });
@@ -105,6 +141,7 @@
         vm.showMore = function () {
             vm.loadStars(true);
         };
+       
         vm.loadStars();
     }]);
 })();
