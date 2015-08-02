@@ -7,13 +7,10 @@
            id: starId
        }).success(function (data) {
            vm.star = data;
-           var i = vm.star.blogs.length;
-           while (i--) {
-               var blog = vm.star.blogs[i];
+           vm.star.blogs.forEach(function (blog) {
                vm['provider' + blog.provider] = blog['url'];
-               blogIds[blog.provider-1] = blog.id;
-           }
-           
+               blogIds[blog.provider - 1] = blog.id;
+           });
        });
        vm.save = function () {
            if ($scope.blog_form.$valid) {

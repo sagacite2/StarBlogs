@@ -5,9 +5,9 @@
     <div class="modal-body">
         <div>
             <div class="form-group">
-                <label ng-repeat="tag in vm.starTagSettings" class="checkbox-inline">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1" ng-checked="vm['checked'+tag.id]" ng-model="vm['checked'+tag.id]">
-                    <span class="label label-default">{{tag.tagName}}</span>
+                <label ng-repeat="tagSetting in vm.starTagSettings" class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1" ng-checked="vm['checked'+tagSetting.id]" ng-model="vm['checked'+tagSetting.id]">
+                    <span class="label label-default">{{tagSetting.tagName}}</span>
                 </label>
             </div>
         </div>

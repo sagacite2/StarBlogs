@@ -34,65 +34,71 @@
             }
         }
     }])
-    .controller('app.views.stars.createEditStar', ['$scope', 'abp.services.app.star', '$modalInstance', 'items','$modal', function ($scope, starService, $modalInstance, items,$modal) {
-        var vm = this;
-        var starId = items.starId;
-        if (starId != -1) {
-            starService.getStar({
-                id: starId
-            }).success(function (data) {
-                vm.star = data;
-                vm.star.blogUrl = vm.star.blogs[0].url;
-            });
-            vm.save = function () {
-                if ($scope.star_form.$valid) {
-                    starService
-                        .updateStar(vm.star)
-                        .success(function () {
-                            $modalInstance.close();
-                        });
-                }
-            };
-        } else {
-            vm.star = {
-                id:-1,
-                name: '',
-                nickname: '',
-                chineseName: '',
-                gender: 2,
-                description: '',
-            };
-            vm.save = function () {
-                if ($scope.star_form.$valid) {
-                    starService
-                        .createStar(vm.star)
-                        .success(function () {
-                            $modalInstance.close();
-                        });
-                }
-            };
-        }
-        vm.cancel = function () {
-            $modalInstance.dismiss('cancel');
-        };
-        $scope.showBlogsDialog = function () {
-            $modalInstance.dismiss('cancel');
-            var modalInstance = $modal.open({
-                templateUrl: abp.appPath + 'App/Main/views/manage/createEditBlog.html',
-                controller: 'app.views.stars.createEditBlog as vm',
-                animation: false,
-                backdrop: false,
-                size: 'md',
-                resolve: {
-                    items: function () {
-                        return items;
+    .controller('app.views.stars.createEditStar', [
+        '$scope',
+        'abp.services.app.star',
+        '$modalInstance',
+        'items',
+        '$modal',
+        function ($scope, starService, $modalInstance, items, $modal) {
+            var vm = this;
+            vm.starId = items.starId;
+            if (vm.starId != -1) {
+                starService.getStar({
+                    id: vm.starId
+                }).success(function (data) {
+                    vm.star = data;
+                    vm.star.blogUrl = vm.star.blogs[0].url;
+                });
+                vm.save = function () {
+                    if ($scope.star_form.$valid) {
+                        starService
+                            .updateStar(vm.star)
+                            .success(function () {
+                                $modalInstance.close();
+                            });
                     }
-                }
-            });
-            modalInstance.result.then(function () {
-                vm.loadStars();
-            });
-        };
-    }]);
+                };
+            } else {
+                vm.star = {
+                    id: -1,
+                    name: '',
+                    nickname: '',
+                    chineseName: '',
+                    gender: 2,
+                    description: '',
+                };
+                vm.save = function () {
+                    if ($scope.star_form.$valid) {
+                        starService
+                            .createStar(vm.star)
+                            .success(function () {
+                                $modalInstance.close();
+                            });
+                    }
+                };
+            }
+            vm.cancel = function () {
+                $modalInstance.dismiss('cancel');
+            };
+            $scope.showBlogsDialog = function () {
+                $modalInstance.dismiss('cancel');
+                var modalInstance = $modal.open({
+                    templateUrl: abp.appPath + 'App/Main/views/manage/createEditBlog.html',
+                    controller: 'app.views.stars.createEditBlog as vm',
+                    animation: false,
+                    backdrop: false,
+                    size: 'md',
+                    resolve: {
+                        items: function () {
+                            return items;
+                        }
+                    }
+                });
+                modalInstance.result.then(function () {
+                    vm.loadStars();
+                });
+            };
+        }]);
 
 

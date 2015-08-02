@@ -30,13 +30,21 @@ namespace StarBlogs.Stars
         private readonly IRepository<Blog> _blogRepository;
         private readonly IRepository<User, long> _userRepository;
         private readonly IRepository<StarTagSetting> _starTagSettingRepository;
+        private readonly IRepository<StarTag> _starTagRepository;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
-        public StarAppService(IStarRepository starRepository, IRepository<Blog> blogRepository, IRepository<User, long> userRepository, IRepository<StarTagSetting> starTagSettingRepository, IUnitOfWorkManager unitOfWorkManager)
+        public StarAppService(
+            IStarRepository starRepository,
+            IRepository<Blog> blogRepository,
+            IRepository<User, long> userRepository,
+            IRepository<StarTagSetting> starTagSettingRepository,
+            IRepository<StarTag> starTagRepository,
+            IUnitOfWorkManager unitOfWorkManager)
         {
             _starRepository = starRepository;
             _blogRepository = blogRepository;
             _userRepository = userRepository;
             _starTagSettingRepository = starTagSettingRepository;
+            _starTagRepository = starTagRepository;
             _unitOfWorkManager = unitOfWorkManager;
         }
         /// <summary>
@@ -49,7 +57,7 @@ namespace StarBlogs.Stars
         {
             return (_starRepository.Get(input.Id)).MapTo<StarDto>();
         }
-        
+
         /// <summary>
         /// 删除明星及其微博
         /// </summary>
@@ -66,6 +74,10 @@ namespace StarBlogs.Stars
             _starRepository.Delete(input.Id);
 
         }
+        /// <summary>
+        /// 屏蔽或解屏蔽明星，被屏蔽的明星及其微博都不应展示到前台页面
+        /// </summary>
+        /// <param name="input"></param>
         [AbpAuthorize(PermissionNames.CanManageStars)]
         public void BlockStar(GetDeleteBlockStarInput input)
         {
@@ -73,7 +85,7 @@ namespace StarBlogs.Stars
             star.IsBlocked = input.IsBlocked;
         }
         /// <summary>
-        /// 获取明星列表
+        /// 获取明星列表并排序、分页
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -164,34 +176,41 @@ namespace StarBlogs.Stars
                 _blogRepository.Insert(blog);
             }
         }
+        /// <summary>
+        /// 获得标签配置数据
+        /// </summary>
+        /// <returns></returns>
         public List<StarTagSettingDto> GetStarTagSettings()
         {
             var settings = _starTagSettingRepository.GetAll().ToList();
-           // return Mapper.DynamicMap<List<StarTagSetting>, List<StarTagSettingDto>>(settings);
+            // return Mapper.DynamicMap<List<StarTagSetting>, List<StarTagSettingDto>>(settings);
             return settings.MapTo<List<StarTagSettingDto>>();
         }
+        /// <summary>
+        /// 为明星附加一个标签列表，替代原列表
+        /// </summary>
+        /// <param name="input"></param>
+        [AbpAuthorize(PermissionNames.CanManageStars)]
         public void UpdateStarTag(UpdateStarTagInput input)
         {
             var star = _starRepository.Get(input.StarId);
             if (star == null)
                 throw new UserFriendlyException("错误的明星ID！");
-            foreach(var tag in star.Tags)
+            //对明星标签的修改操作实际上是不会非常频繁出现的，为求简便，索性把之前的数据全清除
+            _starTagRepository.Delete(r => r.StarId == star.Id);
+            _unitOfWorkManager.Current.SaveChanges();
+            input.StarTags.ForEach(delegate(StarTagDto tag)
             {
-                if (input.StarTags.Find(r => r.TagId == tag.TagId) == null)
-                {
-                    tag.IsDeleted = true;
-                }
-            }
-            foreach (var tag in input.StarTags)
-            {
-                star.Tags.Add(new StarTag
+                //在Application层使用Entity实体是没问题的，而且应该只让Entity Mapto EntityDto，不要反过来。
+                //所以这里不使用tag.Mapto<StarTag>()，因为StarTag类并没有[AutoMapFrom(typeof(StarTagDto))]特性，会报错
+                //也不建议为StarTag加入这个特性。
+                _starTagRepository.Insert(new StarTag
                 {
                     StarId = tag.StarId,
                     TagId = tag.TagId
                 });
-            }
-            
-            _unitOfWorkManager.Current.SaveChanges();
+            });
+
         }
     }
 }

@@ -20,6 +20,7 @@ namespace StarBlogs.EntityFramework
         public virtual IDbSet<OriginalPost> OriginalPosts { get; set; }
         public virtual IDbSet<Picture> Pictures { get; set; }
         public virtual IDbSet<StarTagSetting> StarTagSettings { get; set; }
+        public virtual IDbSet<StarTag> StarTags { get; set; }
         //Example:
         //public virtual IDbSet<User> Users { get; set; }
 

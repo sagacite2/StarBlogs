@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace StarBlogs.Stars
 {
     [Table("StarTag")]
-    public class StarTag : Entity, ISoftDelete
+    public class StarTag : Entity
     {
         public virtual int StarId { get; set; }
         public virtual int TagId { get; set; }
@@ -19,9 +19,7 @@ namespace StarBlogs.Stars
         [JsonIgnore]
         [ForeignKey("TagId")]
         public virtual StarTagSetting Tag { get; set; }
-        [NotMapped]
-        [JsonIgnore]
-        public bool IsDeleted { get; set; }
+
 
     }
 }
