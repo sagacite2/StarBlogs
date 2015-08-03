@@ -125,6 +125,14 @@
     <Compile Include="Migrations\201507310854252_FixstarTag3.Designer.cs">
       <DependentUpon>201507310854252_FixstarTag3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508031041382_AddPostFix.cs" />
+    <Compile Include="Migrations\201508031041382_AddPostFix.Designer.cs">
+      <DependentUpon>201508031041382_AddPostFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508031250363_AddPostFix2.cs" />
+    <Compile Include="Migrations\201508031250363_AddPostFix2.Designer.cs">
+      <DependentUpon>201508031250363_AddPostFix2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Data\InitialDataBuilder.cs" />
     <Compile Include="StarBlogsDataModule.cs" />
@@ -184,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201507310854252_FixstarTag3.resx">
       <DependentUpon>201507310854252_FixstarTag3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508031041382_AddPostFix.resx">
+      <DependentUpon>201508031041382_AddPostFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508031250363_AddPostFix2.resx">
+      <DependentUpon>201508031250363_AddPostFix2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

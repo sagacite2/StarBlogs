@@ -32,7 +32,7 @@ namespace StarBlogs.EntityFramework
         public StarBlogsDbContext()
             : base("StarBlogs")
         {
-
+            
         }
 
         /* NOTE:

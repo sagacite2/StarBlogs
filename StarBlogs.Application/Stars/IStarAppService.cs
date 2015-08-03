@@ -11,8 +11,8 @@ namespace StarBlogs.Stars
 {
     public interface IStarAppService : IApplicationService
     {
-        PagedResultOutput<StarDto> GetStars(GetStarsInput input);
-        StarDto GetStar(GetDeleteBlockStarInput input);
+        PagedResultOutput<StarWithBlogsDto> GetStars(GetStarsInput input);
+        StarWithBlogsDto GetStar(GetDeleteBlockStarInput input);
         void UpdateStar(CreateUpdateStarInput input);
         void CreateStar(CreateUpdateStarInput input);
         void BlockStar(GetDeleteBlockStarInput input);

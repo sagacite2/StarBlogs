@@ -6,9 +6,7 @@ using Abp.Configuration;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Linq.Extensions;
-using Abp.Runtime.Session;
 using Abp.UI;
-using AutoMapper;
 using StarBlogs.Authorization;
 using StarBlogs.Blogs;
 using StarBlogs.Configuration;
@@ -19,7 +17,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Dynamic;
-using System.Threading.Tasks;
 
 namespace StarBlogs.Stars
 {
@@ -53,9 +50,9 @@ namespace StarBlogs.Stars
         /// <param name="input"></param>
         /// <returns></returns>
         [AbpAuthorize(PermissionNames.CanManageStars)]
-        public StarDto GetStar(GetDeleteBlockStarInput input)
+        public StarWithBlogsDto GetStar(GetDeleteBlockStarInput input)
         {
-            return (_starRepository.Get(input.Id)).MapTo<StarDto>();
+            return (_starRepository.Get(input.Id)).MapTo<StarWithBlogsDto>();
         }
 
         /// <summary>
@@ -65,7 +62,12 @@ namespace StarBlogs.Stars
         [AbpAuthorize(PermissionNames.CanManageStars)]
         public void DeleteStar(GetDeleteBlockStarInput input)
         {
-            var blogs = _starRepository.Get(input.Id).Blogs;
+            var star = _starRepository.Get(input.Id);
+            if (star == null)
+            {
+                throw new UserFriendlyException("错误的明星ID！");
+            }
+            var blogs = star.Blogs;
             //这里不能使用foreach，否则出现“集合已修改；可能无法执行枚举操作”错误
             for (int i = 0; i > blogs.Count() - 1; i--)
             {
@@ -90,7 +92,7 @@ namespace StarBlogs.Stars
         /// <param name="input"></param>
         /// <returns></returns>
         [AbpAuthorize(PermissionNames.CanManageStars)]
-        public PagedResultOutput<StarDto> GetStars(GetStarsInput input)
+        public PagedResultOutput<StarWithBlogsDto> GetStars(GetStarsInput input)
         {
             if (input.MaxResultCount <= 0)
             {
@@ -106,10 +108,10 @@ namespace StarBlogs.Stars
                     .PageBy(input)
                     .ToList();
 
-            return new PagedResultOutput<StarDto>
+            return new PagedResultOutput<StarWithBlogsDto>
             {
                 TotalCount = starCount,
-                Items = stars.MapTo<List<StarDto>>()
+                Items = stars.MapTo<List<StarWithBlogsDto>>()
             };
         }
 
@@ -128,6 +130,7 @@ namespace StarBlogs.Stars
             star.Nickname = input.Nickname;
             star.Name = input.Name;
             star.Description = input.Description;
+            star.LastUpdateTime = DateTime.Now;
             //star.IsBlocked = input.IsBlocked;//编辑明星时也可以进行屏蔽操作,暂不搞
 
         }

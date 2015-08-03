@@ -51,3 +51,5 @@ D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.A
 D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.FixStarTag.resources
 D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.FixStarTag2.resources
 D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.FixstarTag3.resources
+D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.AddPostFix.resources
+D:\Projects\StarBlogs\StarBlogs.EntityFramework\obj\Debug\StarBlogs.Migrations.AddPostFix2.resources

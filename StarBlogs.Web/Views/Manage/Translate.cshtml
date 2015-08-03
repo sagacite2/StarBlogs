@@ -1,12 +1,26 @@
 ﻿@{
     ViewBag.ActiveMenu = "Manage"; //The menu item will be active for this page.
 }
-<div class="row">
-    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
-        <ol class="breadcrumb">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">管理</a></li>
-            <li class="active">翻译管理</li>
-        </ol>
+<div ng-controller="app.views.stars.post as vm">
+    <div class="row">
+        <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">管理</a></li>
+                <li class="active">翻译管理</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div ng-repeat="post in vm.posts" class="row">
+                <div class="col-lg-2"><a href="#">{{post.blog.star.name}}</a></div>
+                <div class="col-lg-10">{{post.content}}</div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <p>按标签</p>
+            <p>按审核</p>
+        </div>
     </div>
 </div>

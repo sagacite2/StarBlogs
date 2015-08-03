@@ -10,6 +10,10 @@ using Abp.Extensions;
 
 namespace StarBlogs.Blogs.Dtos
 {
+    public class GetPostInput : IInputDto
+    {
+        public int Id { get; set; }
+    }
     public class GetPostByStarInput : IInputDto, IPagedResultRequest
     {
         public int StarId { get; set; }

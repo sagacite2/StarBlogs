@@ -12,7 +12,7 @@ namespace StarBlogs.Blogs.Dtos
     public class PostDto:EntityDto
     {
         public int BlogId { get; set; }
-
+       
         public int StarId { get; set; }
 
         public string Content { get; set; }

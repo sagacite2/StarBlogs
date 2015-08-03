@@ -46,4 +46,3 @@ D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Abp.Zero.xml
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\EntityFramework.xml
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Abp.EntityFramework.pdb
-D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Abp.EntityFramework.xml

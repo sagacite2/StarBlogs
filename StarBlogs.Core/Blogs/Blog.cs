@@ -34,7 +34,7 @@ namespace StarBlogs.Blogs
         /// <summary>
         /// 所属明星
         /// </summary>
-        [JsonIgnore]//加上JsonIgnore特性避免出现Self referencing loop detected问题
+        //[JsonIgnore]//加上JsonIgnore特性避免出现Self referencing loop detected问题
         public virtual Star Star { get; set; }
         /// <summary>
         /// 所属明星Id
@@ -46,8 +46,8 @@ namespace StarBlogs.Blogs
         public virtual string Description { get; set; }
         public virtual DateTime CreationTime { get; set; }
         public virtual DateTime LastUpdateTime { get; set; }
-        [JsonIgnore]
-        public virtual ICollection<OriginalPost> Posts { get; set; }
+      //  [JsonIgnore]
+      //  public virtual ICollection<OriginalPost> Posts { get; set; }
         /// <summary>
         /// 从博客地址抽取Provider、Name信息
         /// 如地址：https://twitter.com/XHNews

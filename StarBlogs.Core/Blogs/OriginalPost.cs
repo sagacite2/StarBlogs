@@ -15,8 +15,9 @@ namespace StarBlogs.Blogs
     {
 
         public virtual int BlogId { get; set; }
-
+        public virtual Blog Blog { get; set; }
         public virtual int StarId { get; set; }
+        //public virtual Star Star { get; set; }
 
         public virtual string Content { get; set; }
 
@@ -25,5 +26,7 @@ namespace StarBlogs.Blogs
         public virtual DateTime PostTime { get; set; }
 
         public virtual string DefaultTranslate { get; set; }
+
+        public virtual bool IsBlocked { get; set; }
     }
 }
