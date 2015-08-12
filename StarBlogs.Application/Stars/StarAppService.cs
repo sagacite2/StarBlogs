@@ -215,5 +215,23 @@ namespace StarBlogs.Stars
             });
 
         }
+        [AbpAuthorize(PermissionNames.CanManageStars)]
+        public void CreateTagSetting(CreateTagSettingInput input)
+        {
+            _starTagSettingRepository.Insert(new StarTagSetting
+            {
+                ParentTagId = 0,
+                TagName = input.Name
+            });
+        }
+        [AbpAuthorize(PermissionNames.CanManageStars)]
+        public void UpdateTagSetting(UpdateTagSettingInput input)
+        {
+            var tag = _starTagSettingRepository.Get(input.Id);
+            if (tag!=null)
+            {
+                tag.TagName = input.Name;
+            }
+        }
     }
 }

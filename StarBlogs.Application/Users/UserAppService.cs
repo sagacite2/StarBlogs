@@ -4,6 +4,9 @@ using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using StarBlogs.Users.Dto;
+using StarBlogs.Users.Dtos;
+using System.Threading.Tasks;
+using Abp.UI;
 
 namespace StarBlogs.Users
 {
@@ -22,6 +25,36 @@ namespace StarBlogs.Users
             {
                 Items = _userManager.Users.ToList().MapTo<List<UserDto>>()
             };
+        }
+        public async void Register(RegisterInput input)
+        {
+            var user = await _userManager.FindByNameAsync(input.UserName);
+            if (user == null)
+            {
+                var result = await _userManager.CreateAsync(new User
+                {
+                    Name = input.UserName,
+                    Password = input.Password
+
+                });
+                if (result.Succeeded)
+                {
+                    await _userManager.LoginAsync(input.UserName, input.Password);
+                }
+                else
+                {
+                    throw new UserFriendlyException("创建用户时出现错误!");
+                }
+            }
+            else
+            {
+                throw new UserFriendlyException("该用户名已经被注册!");
+            }
+            
+        }
+        public bool CheckUserName()
+        {
+            return false;
         }
     }
 }

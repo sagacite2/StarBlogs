@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.ActiveMenu = "Manage"; //The menu item will be active for this page.
+}
+<div ng-controller="app.views.stars.tag as vm">
+    <div class="row">
+        <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">管理</a></li>
+                <li class="active">标签管理</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10">
+            添加一个标签：
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">名称：</div> <input type="text" class="form-control" ng-model="newTagName">
+                    </div>
+                    <a class="btn  btn-primary btn-sm" href="#" role="button" ng-click="vm.create(newTagName)">
+                        添加 &raquo;
+                    </a>
+                </div>
+            </form>
+            修改标签名称：
+            <form method="post" class="form-inline" name="tag_form" novalidate>
+                <div ng-repeat="tag in vm.tags" class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">{{tag.id}}.</div> <input type="text" class="form-control" ng-model="tag.tagName">
+
+                    </div>
+                    <div class="btn-group">
+                        <a class="btn  btn-warning btn-sm" href="#" role="button" ng-click="vm.save(tag.id,tag.tagName)">
+                            保存 &raquo;
+                        </a>
+                    </div>
+                    <div class="input-group" style="padding-right:10px"></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-2">
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+
+</div>

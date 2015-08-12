@@ -12,15 +12,45 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8" ng-show="vm.showing=='NewPosts'">
             <div ng-repeat="post in vm.posts" class="row">
-                <div class="col-lg-2"><a href="#">{{post.blog.star.name}}</a></div>
-                <div class="col-lg-10">{{post.content}}</div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-10">
+                    <p>来自：<a href="#" target="_blank">{{post.blog.star.chineseName}} ({{post.blog.star.name}})</a> <span ng-show="post.blog.star.isBlocked" class="label label-default">已屏蔽</span>   {{post.postTime| fromNow}}</p>
+                    <p>微博主页：<i class="fa fa-{{post.blog.providerName}}"></i><a target="_blank" href="{{post.blog.url}}"> {{post.blog.url}}</a></p>
+                    <p>原文：{{post.content}}<span ng-show="post.isBlocked" class="label label-default">博文已屏蔽</span></p>
+                    <p>附图：<div ng-repeat="pic in post.pictures"><a href="{{pic.url}}" target="_blank"><img src="{{pic.url}}" /></a></div></p>
+                    <p>初译：{{post.defaultTranslate}}</p>
+                    <p>
+                        管理操作：
+                        <a ng-show="!post.isBlocked" class="btn btn-warning btn-sm" href="#" role="button" ng-click="vm.blockPost(post.id,true)">
+                            屏蔽 &raquo;
+                        </a>
+                        <a ng-show="post.isBlocked" class="btn btn-warning btn-sm" href="#" role="button" ng-click="vm.blockPost(post.id,false)">
+                            解屏 &raquo;
+                        </a>
+                        <a class="btn btn-primary btn-sm" href="#" role="button" ng-click="vm.loadTranslateByPostId(post.id)">
+                            译文 &raquo;
+                        </a>
+                    </p>
+
+                    <hr />
+                </div>
             </div>
         </div>
+
+        <div class="col-lg-8" ng-show="vm.showing=='NewTranslates'">
+            <div ng-repeat="post in vm.posts" class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-10">
+
+                </div>
+            </div>
+        </div>
+
         <div class="col-lg-4">
-            <p>按标签</p>
-            <p>按审核</p>
+            <p><a href="#" ng-click="vm.switchShow('NewPosts')">最近发表的博文</a></p>
+            <p><a href="#" ng-click="vm.switchShow('NewTranslates')">最近添加的译文</a></p>
         </div>
     </div>
 </div>

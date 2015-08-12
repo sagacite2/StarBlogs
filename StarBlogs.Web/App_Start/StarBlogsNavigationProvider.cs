@@ -46,6 +46,15 @@ namespace StarBlogs.Web
                                 requiresAuthentication: true,
                                 requiredPermissionName: PermissionNames.CanManageTranslatings
                                 )
+                        ).AddItem(
+                            new MenuItemDefinition(
+                                "ManageTag",
+                                new LocalizableString("ManageTag", StarBlogsConsts.LocalizationSourceName),
+                                icon: "",
+                                url: "/Manage/Tag",
+                                requiresAuthentication: true,
+                                requiredPermissionName: PermissionNames.CanManageStars
+                                )
                         )
                 );
         }

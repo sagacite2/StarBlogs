@@ -1,0 +1,38 @@
+﻿<form method="post" class="form-horizontal" name="reg_form" novalidate>
+    <div class="modal-header">
+        <h3 class="modal-title">注册</h3>
+    </div>
+    <div class="modal-body">
+        <div class="form-group" ng-class="{'has-error': reg_form.username.$dirty && reg_form.username.$invalid}">
+            <label for="starBlogUrl" class="col-sm-4 control-label">用户名：</label>
+            <div class="col-sm-7">
+                <input type="text" id="username" ng-model="vm.userName" class="form-control" name="username" ng-maxlength=15 placeholder="不能超过15个字符" ng-focus />
+            </div>
+            <div class="col-sm-7 col-sm-offset-4" ng-show="reg_form.username.$invalid">
+                <div class="form-control-static">
+                    <div ng-messages="reg_form.username.$error">
+                        <small class="error" ng-message="maxlength">用户名不能超过15个字符！</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': reg_form.password.$dirty && reg_form.password.$invalid}">
+            <label for="starBlogUrl" class="col-sm-4 control-label">密码：</label>
+            <div class="col-sm-7">
+                <input type="password" id="password" ng-model="vm.password" class="form-control" name="password" ng-maxlength=25 ng-minlength=5 placeholder="不能少于5个字符" ng-focus />
+            </div>
+            <div class="col-sm-7 col-sm-offset-4" ng-show="reg_form.password.$invalid">
+                <div class="form-control-static">
+                    <div ng-messages="reg_form.password.$error">
+                        <small class="error" ng-message="maxlength">密码不能超过25个字符！</small>
+                        <small class="error" ng-message="minlength">密码不能少于5个字符！</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="vm.reg()">注册</button>
+        <button class="btn btn-warning" ng-click="vm.cancel()">关闭</button>
+    </div>
+</form>

@@ -19,5 +19,7 @@ namespace StarBlogs.Stars
         void DeleteStar(GetDeleteBlockStarInput input);
         List<StarTagSettingDto> GetStarTagSettings();
         void UpdateStarTag(UpdateStarTagInput input);
+        void CreateTagSetting(CreateTagSettingInput input);
+        void UpdateTagSetting(UpdateTagSettingInput input);
     }
 }

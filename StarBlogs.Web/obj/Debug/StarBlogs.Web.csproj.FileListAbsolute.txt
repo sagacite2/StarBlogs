@@ -105,3 +105,9 @@ D:\Projects\StarBlogs\StarBlogs.Web\bin\Microsoft.Owin.Security.xml
 D:\Projects\StarBlogs\StarBlogs.Web\bin\Microsoft.Owin.Security.Cookies.xml
 D:\Projects\StarBlogs\StarBlogs.Web\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Projects\StarBlogs\StarBlogs.Web\bin\Owin.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll

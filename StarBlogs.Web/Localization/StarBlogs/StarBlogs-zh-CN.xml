@@ -16,5 +16,6 @@
     <text name="Manage" value="管理" />
     <text name="ManageStar" value="明星管理" />
     <text name="ManageTranslate" value="翻译管理" />
+    <text name="ManageTag" value="标签设置" />
   </texts>
 </localizationDictionary>

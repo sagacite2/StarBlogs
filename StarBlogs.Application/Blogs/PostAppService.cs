@@ -64,6 +64,7 @@ namespace StarBlogs.Blogs
             if(post==null)
                 throw new UserFriendlyException("错误的博文ID");
             post.IsBlocked = input.IsBlocked;
+            //_unitOfWorkManager.Current.SaveChanges();
         }
         /// <summary>
         /// 根据ID删除一张博文图片

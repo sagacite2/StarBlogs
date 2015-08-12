@@ -22,5 +22,6 @@ namespace StarBlogs.Blogs.Dtos
         public DateTime PostTime { get; set; }
 
         public string DefaultTranslate { get; set; }
+        public bool IsBlocked { get; set; }
     }
 }

@@ -32,6 +32,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -212,7 +213,10 @@
     <Content Include="App\Main\views\manage\createEditBlog.js" />
     <Content Include="App\Main\views\manage\manageStarTags.html" />
     <Content Include="App\Main\views\manage\manageStarTags.js" />
+    <Content Include="App\Main\views\manage\tag.js" />
     <Content Include="App\Main\views\manage\translate.js" />
+    <Content Include="App\Main\views\users\register.html" />
+    <Content Include="App\Main\views\users\register.js" />
     <Content Include="bower_components\angular-material\angular-material.css" />
     <Content Include="bower_components\angular-material\angular-material.js" />
     <Content Include="bower_components\angular-material\angular-material.min.css" />
@@ -583,6 +587,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Models\Account\LoginViewModel.cs" />
+    <Compile Include="Models\Account\RegisterViewModel.cs" />
     <Compile Include="Models\Account\WelcomeModel.cs" />
     <Compile Include="Models\Layout\LanguageSelectionViewModel.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
@@ -756,6 +761,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <Content Include="Views\Manage\Tag.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -56,12 +56,14 @@ namespace StarBlogs.Blogs
                 {
                     var blog = new Blog { Url = url };
                     blog.ResolveUrl(url);
-                    var sameBlog = _blogRepository.GetAll().Where(b => b.StarId != input.starId).Where(b => b.Name == blog.Name).Where(b => b.Provider == blog.Provider);
-                    if (sameBlog.Count() > 0)
+                    if (!string.IsNullOrEmpty(blog.Name) && blog.Provider != null)
                     {
-                        throw new UserFriendlyException("你添加的微博" + url + "已经存在，不能重复添加");
+                        var sameBlog = _blogRepository.GetAll().Where(b => b.StarId != input.starId && b.Name == blog.Name && b.Provider == blog.Provider);
+                        if (sameBlog.Count() > 0)
+                        {
+                            throw new UserFriendlyException("你添加的微博" + url + "已经存在，不能重复添加");
+                        }
                     }
-
                     if (id != -1)
                     {
                         //编辑微博

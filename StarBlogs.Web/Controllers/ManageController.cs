@@ -43,5 +43,9 @@ namespace StarBlogs.Web.Controllers
         {
             return View();
         }
+        public ActionResult Tag()
+        {
+            return View();
+        }
     }
 }

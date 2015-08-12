@@ -6,7 +6,7 @@
     <members>
         <member name="T:Abp.Auditing.AuditingStore">
             <summary>
-            Implements <see cref="T:Abp.Auditing.IAuditingStore"/> to save auditing informations to database.
+            实现 <see cref="T:Abp.Auditing.IAuditingStore"/> 接口，用于存储操作记录到数据库（使用其SaveAsync方法）
             </summary>
         </member>
         <member name="M:Abp.Auditing.AuditingStore.#ctor(Abp.Domain.Repositories.IRepository{Abp.Auditing.AuditLog,System.Int64})">
@@ -16,7 +16,7 @@
         </member>
         <member name="T:Abp.Auditing.AuditLog">
             <summary>
-            Used to store audit logs.
+            实体类，映射为数据表AbpAuditLogs，用于存储操作记录
             </summary>
         </member>
         <member name="F:Abp.Auditing.AuditLog.MaxServiceNameLength">
@@ -88,12 +88,12 @@
         </member>
         <member name="P:Abp.Auditing.AuditLog.ExecutionTime">
             <summary>
-            Start time of the method execution.
+            执行方法的开始时间
             </summary>
         </member>
         <member name="P:Abp.Auditing.AuditLog.ExecutionDuration">
             <summary>
-            Total duration of the method call as milliseconds.
+            执行方法耗费的时间（毫秒）
             </summary>
         </member>
         <member name="P:Abp.Auditing.AuditLog.ClientIpAddress">
@@ -706,6 +706,17 @@
             <returns>User</returns>
             <exception cref="T:Abp.AbpException">Throws exception if no user found with given id</exception>
         </member>
+        <member name="M:Abp.Authorization.Users.AbpUserManager`3.CheckDuplicateUsernameOrEmailAddressAsync(System.Nullable{System.Int64},System.String,System.String)">
+            <summary>
+            通过用户名检索用户表，若发现存在这个用户名，且用户Id不等于expectedUserId，则返回AbpIdentityResult.Failed
+            继续，通过Email检索用户表，若发现存在这个Email，且用户Id不等于expectedUserId，则返回AbpIdentityResult.Failed
+            若通过检查，则返回IdentityResult.Success
+            </summary>
+            <param name="expectedUserId"></param>
+            <param name="userName"></param>
+            <param name="emailAddress"></param>
+            <returns></returns>
+        </member>
         <member name="T:Abp.Authorization.Users.AbpUserStore`3">
             <summary>
             Implements 'User Store' of ASP.NET Identity Framework.
@@ -755,12 +766,12 @@
         </member>
         <member name="M:Abp.Authorization.Roles.AbpRole`2.#ctor">
             <summary>
-            Creates a new <see cref="T:Abp.Authorization.Roles.AbpRole`2"/> object.
+            Creates a new <see cref="T:Abp.Authorization.Roles.AbpRole`2"/> object.使用此构造函数，会设置Name为随机的Guid值
             </summary>
         </member>
         <member name="M:Abp.Authorization.Roles.AbpRole`2.#ctor(System.Nullable{System.Int32},System.String)">
             <summary>
-            Creates a new <see cref="T:Abp.Authorization.Roles.AbpRole`2"/> object.
+            Creates a new <see cref="T:Abp.Authorization.Roles.AbpRole`2"/> object.使用此构造函数，会设置Name为随机的Guid值
             </summary>
             <param name="tenantId">TenantId or null (if this is not a tenant-level role)</param>
             <param name="displayName">Display name of the role</param>
@@ -775,39 +786,39 @@
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.Tenant">
             <summary>
-            The Tenant, if this role is a tenant-level role.
+            The Tenant, if this role is a tenant-level role.角色所属租户
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.TenantId">
             <summary>
-            Tenant's Id, if this role is a tenant-level role. Null, if not.
+            Tenant's Id, if this role is a tenant-level role. Null, if not.角色所属租户Id
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.Name">
             <summary>
-            Unique name of this role.
+            Unique name of this role.角色名称，不可重复
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.DisplayName">
             <summary>
-            Display name of this role.
+            Display name of this role.用于外部展示的名称
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.IsStatic">
             <summary>
-            Is this a static role?
+            Is this a static role?如果为true，则角色不允许删除和改名
             Static roles can not be deleted, can not change their name.
             They can be used programmatically.
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.IsDefault">
             <summary>
-            Is this role will be assigned to new users as default?
+            Is this role will be assigned to new users as default?如果为true，则新用户会被默认赋予这个角色
             </summary>
         </member>
         <member name="P:Abp.Authorization.Roles.AbpRole`2.Permissions">
             <summary>
-            List of permissions of the role.
+            List of permissions of the role.赋予该角色的RolePermissionSetting对象集合
             </summary>
         </member>
         <member name="T:Abp.Authorization.Users.UserRole">
@@ -952,96 +963,94 @@
             Maximum length of the <see cref="P:Abp.Authorization.Users.AbpUser`2.AuthenticationSource"/> property.
             </summary>
         </member>
-        <member name="P:Abp.Authorization.Users.AbpUser`2.Tenant">
-            <summary>
-            Tenant of this user.
-            </summary>
-        </member>
+        <!-- 对于成员“P:Abp.Authorization.Users.AbpUser`2.Tenant”忽略有格式错误的 XML 注释 -->
         <member name="P:Abp.Authorization.Users.AbpUser`2.TenantId">
             <summary>
-            Tenant Id of this user.
+            Tenant Id of this user.这个用户所属的租户的Id，来自IMayHaveTenant接口
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.AuthenticationSource">
             <summary>
-            Authorization source name.
+            Authorization source name.第三方登录平台的名称，参考IExternalAuthenticationSource的Name属性
             It's set to external authentication source name if created by an external source.
             Default: null.
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Name">
             <summary>
-            Name of the user.
+            Name of the user.名
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Surname">
             <summary>
-            Surname of the user.
+            Surname of the user.姓
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.UserName">
             <summary>
-            User name.
-            User name must be unique for it's tenant.
+            User name.用户名
+            User name must be unique for it's tenant.一个租户下用户名不可重复
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Password">
             <summary>
-            Password of the user.
+            Password of the user.密码
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.EmailAddress">
             <summary>
             Email address of the user.
-            Email address must be unique for it's tenant.
+            Email address must be unique for it's tenant.邮箱地址
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.IsEmailConfirmed">
             <summary>
-            Is the <see cref="P:Abp.Authorization.Users.AbpUser`2.EmailAddress"/> confirmed.
+            Is the <see cref="P:Abp.Authorization.Users.AbpUser`2.EmailAddress"/> confirmed.邮箱是否已验证
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.EmailConfirmationCode">
             <summary>
-            Confirmation code for email.
+            Confirmation code for email.邮箱验证码
+            其值可以由方法SetNewEmailConfirmationCode()设定
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.PasswordResetCode">
             <summary>
-            Reset code for password.
+            Reset code for password.重置密码的验证码，重置密码之后这个值必须设回null
+            其值可以由方法SetNewPasswordResetCode()设定
             It's not valid if it's null.
             It's for one usage and must be set to null after reset.
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.LastLoginTime">
             <summary>
-            The last time this user entered to the system.
+            The last time this user entered to the system.最近登录时间
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.IsActive">
             <summary>
-            Is this user active?
+            Is this user active?用户是否激活，来自IPassivable接口
             If as user is not active, he/she can not use the application.
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Logins">
             <summary>
-            Login definitions for this user.
+            Login definitions for this user.导航属性：UserLogin对象集合
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Roles">
             <summary>
-            Role definitions for this user.
+            Role definitions for this user.导航属性：UserRole对象集合
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Permissions">
             <summary>
-            Permission definitions for this user.
+            Permission definitions for this user.导航属性：UserPermissionSetting对象集合
             </summary>
         </member>
         <member name="P:Abp.Authorization.Users.AbpUser`2.Settings">
             <summary>
-            Settings for this user.
+            Settings for this user.导航属性：Settings对象集合
             </summary>
         </member>
         <member name="T:Abp.Authorization.Users.UserLogin">

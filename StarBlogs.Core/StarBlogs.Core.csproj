@@ -94,6 +94,8 @@
     <Compile Include="Stars\Star.cs" />
     <Compile Include="Stars\StarTag.cs" />
     <Compile Include="Stars\StarTagSetting.cs" />
+    <Compile Include="Users\Contribution.cs" />
+    <Compile Include="Users\InChargeOfStar.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />

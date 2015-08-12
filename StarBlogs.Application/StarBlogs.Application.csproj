@@ -100,6 +100,7 @@
     <Compile Include="Blogs\Dtos\PostDto.cs" />
     <Compile Include="Blogs\Dtos\PostWithBlogDto.cs" />
     <Compile Include="Blogs\Dtos\PostWithBlogOfStarDto.cs" />
+    <Compile Include="Stars\Dtos\CreateUpdateTagSettingInput.cs" />
     <Compile Include="Stars\Dtos\StarWithBlogsDto.cs" />
     <Compile Include="Blogs\IBlogAppService.cs" />
     <Compile Include="Blogs\IPostAppService.cs" />
@@ -118,6 +119,12 @@
     <Compile Include="Stars\Dtos\UpdateStarTagInput.cs" />
     <Compile Include="Stars\IStarAppService.cs" />
     <Compile Include="Stars\StarAppService.cs" />
+    <Compile Include="Translates\Dtos\GetTranslationInput.cs" />
+    <Compile Include="Translates\Dtos\TranslationDto.cs" />
+    <Compile Include="Translates\Dtos\TranslationWithPost.cs" />
+    <Compile Include="Translates\ITranslateAppService.cs" />
+    <Compile Include="Translates\TranslateAppService.cs" />
+    <Compile Include="Users\Dtos\RegisterInput.cs" />
     <Compile Include="Users\Dtos\UserDto.cs" />
     <Compile Include="Users\IUserAppService.cs" />
     <Compile Include="Users\UserAppService.cs" />

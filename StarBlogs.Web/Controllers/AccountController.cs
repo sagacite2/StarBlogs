@@ -27,6 +27,36 @@ namespace StarBlogs.Web.Controllers
             _userManager = userManager;
         }
         [HttpPost]
+        [AllowAnonymous]
+        public async Task<JsonResult> Register(RegisterViewModel model, string returnUrl = "")
+        {
+            if (!ModelState.IsValid)
+            {
+                throw new UserFriendlyException("你提交的表单有误！");
+            }
+
+            var user = new User() { UserName = model.UserName };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+            {
+                throw new UserFriendlyException("创建用户失败！");
+            }
+
+            AuthenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie);
+            AuthenticationManager.SignIn(
+                new AuthenticationProperties { IsPersistent = false },
+                await _userManager.CreateIdentityAsync(user, DefaultAuthenticationTypes.ApplicationCookie)
+                );
+
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                returnUrl = Request.ApplicationPath;
+            }
+
+            return Json(new MvcAjaxResponse { TargetUrl = returnUrl });
+
+        }
+        [HttpPost]
         public async Task<JsonResult> Login(LoginViewModel loginModel, string returnUrl = "")
         {
             if (!ModelState.IsValid)
@@ -35,7 +65,7 @@ namespace StarBlogs.Web.Controllers
             }
 
             var loginResult = await _userManager.LoginAsync(
-                loginModel.Username,
+                loginModel.UserName,
                 loginModel.Password,
                 loginModel.TenancyName
                 );
@@ -52,7 +82,7 @@ namespace StarBlogs.Web.Controllers
                 case AbpLoginResultType.TenantIsNotActive:
                     throw new UserFriendlyException("租户未激活: " + loginModel.TenancyName);
                 case AbpLoginResultType.UserIsNotActive:
-                    throw new UserFriendlyException("用户未激活: " + loginModel.Username);
+                    throw new UserFriendlyException("用户未激活: " + loginModel.UserName);
                 case AbpLoginResultType.UserEmailIsNotConfirmed:
                     throw new UserFriendlyException("Email地址未认证！");
                 default: //Can not fall to default for now. But other result types can be added in the future and we may forget to handle it
@@ -86,8 +116,9 @@ namespace StarBlogs.Web.Controllers
             {
                 var model = new WelcomeModel();
                 model.Username = AuthenticationManager.User.Identity.Name;
-                return PartialView("_SimpleWelcome",model);
-            }else
+                return PartialView("_SimpleWelcome", model);
+            }
+            else
                 return PartialView("_SimpleLogin");
         }
     }

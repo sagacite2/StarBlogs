@@ -895,7 +895,7 @@
         </member>
         <member name="M:Abp.Auditing.AuditingStoreExtensions.Save(Abp.Auditing.IAuditingStore,Abp.Auditing.AuditInfo)">
             <summary>
-            Should save audits to a persistent store.
+            执行异步方法时使用了组件 Nito.AsyncEx，参看https://github.com/StephenCleary/AsyncEx
             </summary>
             <param name="auditingStore">Auditing store</param>
             <param name="auditInfo">Audit informations</param>

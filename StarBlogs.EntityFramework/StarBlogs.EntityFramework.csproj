@@ -133,6 +133,14 @@
     <Compile Include="Migrations\201508031250363_AddPostFix2.Designer.cs">
       <DependentUpon>201508031250363_AddPostFix2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508101253144_AddUserProperty.cs" />
+    <Compile Include="Migrations\201508101253144_AddUserProperty.Designer.cs">
+      <DependentUpon>201508101253144_AddUserProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508120628529_FixAbpUser.cs" />
+    <Compile Include="Migrations\201508120628529_FixAbpUser.Designer.cs">
+      <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Data\InitialDataBuilder.cs" />
     <Compile Include="StarBlogsDataModule.cs" />
@@ -198,6 +206,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508031250363_AddPostFix2.resx">
       <DependentUpon>201508031250363_AddPostFix2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508101253144_AddUserProperty.resx">
+      <DependentUpon>201508101253144_AddUserProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508120628529_FixAbpUser.resx">
+      <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
