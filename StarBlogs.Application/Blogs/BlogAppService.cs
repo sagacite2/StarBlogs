@@ -33,6 +33,7 @@ namespace StarBlogs.Blogs
         [AbpAuthorize(PermissionNames.CanManageStars)]
         public void CreateUpdateBlog(CreateUpdateBlogInput input)
         {
+            //System.Web.HttpContext.Current.Server.MapPath(
             var star = _starRepository.Get(input.starId);
             if (star == null)
             {
@@ -56,7 +57,7 @@ namespace StarBlogs.Blogs
                 {
                     var blog = new Blog { Url = url };
                     blog.ResolveUrl(url);
-                    if (!string.IsNullOrEmpty(blog.Name) && blog.Provider != null)
+                    if (!string.IsNullOrEmpty(blog.Name) && blog.Provider != BlogProvider.UNDEFINED)
                     {
                         var sameBlog = _blogRepository.GetAll().Where(b => b.StarId != input.starId && b.Name == blog.Name && b.Provider == blog.Provider);
                         if (sameBlog.Count() > 0)

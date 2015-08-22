@@ -111,3 +111,10 @@ D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.Razor.resources.dll
 D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\Projects\StarBlogs\StarBlogs.Web\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Html.Parser.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Html.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Core.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Html.Parser.Regulars.dll
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Html.Parser.xml
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Html.xml
+D:\Projects\StarBlogs\StarBlogs.Web\bin\Ivony.Core.xml

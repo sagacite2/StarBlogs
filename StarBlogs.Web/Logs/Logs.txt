@@ -2006,3 +2006,757 @@ Abp.UI.UserFriendlyException: 创建用户失败！
    在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
    在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2015-08-13 08:00:01,555 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-13 08:00:03,041 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-13 08:00:03,047 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,049 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,050 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,051 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,051 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-13 08:00:03,055 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-13 08:00:04,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-08-13 08:00:04,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-08-13 08:00:04,191 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-08-13 08:00:04,195 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-08-13 08:00:04,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-08-13 08:00:04,201 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-08-13 08:00:04,205 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-08-13 08:00:04,210 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-08-13 08:00:04,223 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-08-13 08:00:04,228 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-08-13 08:00:04,230 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-08-13 08:00:04,232 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-08-13 08:00:04,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-08-13 08:00:04,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-08-13 08:00:05,321 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-08-13 08:00:05,324 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-08-13 08:00:05,327 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-08-13 08:00:05,330 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-13 08:00:06,152 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-13 08:00:06,158 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-13 08:00:06,159 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-13 08:00:06,167 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-08-13 08:00:06,167 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-08-15 20:15:39,572 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-15 20:15:45,076 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-15 20:15:45,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,084 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:15:45,092 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-15 20:15:49,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-08-15 20:15:49,622 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-08-15 20:15:50,042 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-08-15 20:15:50,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-08-15 20:15:50,066 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-08-15 20:15:50,082 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-08-15 20:15:50,098 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-08-15 20:15:50,118 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-08-15 20:15:50,166 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-08-15 20:15:50,178 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-08-15 20:15:50,182 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-08-15 20:15:50,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-08-15 20:15:50,202 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-08-15 20:15:50,214 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-08-15 20:15:55,356 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-08-15 20:15:55,362 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-08-15 20:15:55,365 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-08-15 20:15:55,367 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-15 20:15:57,353 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-15 20:15:57,361 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-15 20:15:57,365 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-15 20:15:57,381 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-08-15 20:15:57,381 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-15 20:20:58,807 [40   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='二恶女' Nickname='而' ChineseName='re而' Sex=''
+Description : 而
+BlogUrl='而'
+ERROR 2015-08-15 20:20:59,580 [23   ] lers.Filters.AbpExceptionFilterAttribute - Abp.UI.UserFriendlyException: 你添加的微博而已经存在，不能重复添加
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 174
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+Abp.UI.UserFriendlyException: 你添加的微博而已经存在，不能重复添加
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 174
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2015-08-15 20:21:16,184 [33   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='二恶女' Nickname='而' ChineseName='re而' Sex=''
+Description : 而
+BlogUrl='http://www.twitter.com/wawawa'
+ERROR 2015-08-15 20:21:16,818 [35   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2015-08-15 20:21:29,881 [44   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='二恶ds 女' Nickname='而sd' ChineseName='re而sd' Sex=''
+Description : 而sd
+BlogUrl='https://www.twitter.com/wawawa/'
+ERROR 2015-08-15 20:21:30,582 [40   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2015-08-15 20:21:36,713 [45   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='ddddd' Nickname='而sd' ChineseName='re而sd' Sex=''
+Description : 而sd
+BlogUrl='https://www.twitter.com/wawawa/'
+ERROR 2015-08-15 20:21:37,281 [40   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2015-08-15 20:22:04,817 [33   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='ddddd' Nickname='dddddd' ChineseName='re而sd' Sex=''
+Description : 而sd sddddddddddddddd
+BlogUrl='https://www.twitter.com/wawawa/'
+ERROR 2015-08-15 20:22:05,516 [23   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: 未找到请求的值“WWW.TWITTER”。
+   在 System.Enum.EnumResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument)
+   在 System.Enum.TryParseEnum(Type enumType, String value, Boolean ignoreCase, EnumResult& parseResult)
+   在 System.Enum.Parse(Type enumType, String value, Boolean ignoreCase)
+   在 System.Enum.Parse(Type enumType, String value)
+   在 StarBlogs.Blogs.Blog.ResolveUrl(String url) 位置 d:\Projects\StarBlogs\StarBlogs.Core\Blogs\Blog.cs:行号 65
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 168
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2015-08-15 20:23:42,472 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-08-15 20:23:47,626 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-08-15 20:23:47,642 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.4.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.6.4.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,650 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-08-15 20:23:47,662 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-08-15 20:23:52,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-08-15 20:23:52,749 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-08-15 20:23:53,065 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-08-15 20:23:53,073 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-08-15 20:23:53,077 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-08-15 20:23:53,089 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-08-15 20:23:53,101 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-08-15 20:23:53,121 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-08-15 20:23:53,173 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-08-15 20:23:53,193 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-08-15 20:23:53,201 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-08-15 20:23:53,209 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-08-15 20:23:53,225 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-08-15 20:23:53,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-08-15 20:23:57,856 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-08-15 20:23:57,860 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-08-15 20:23:57,863 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-08-15 20:23:57,866 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-08-15 20:23:59,475 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-08-15 20:23:59,487 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-08-15 20:23:59,488 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-08-15 20:23:59,491 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-08-15 20:23:59,492 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+INFO  2015-08-15 20:25:50,500 [29   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='ddfd' Nickname='dfgdfg' ChineseName='dfgdfg' Sex=''
+Description : dfgdg
+BlogUrl='https;//twitter.com/sdfsfe'
+ERROR 2015-08-15 20:25:51,309 [7    ] lers.Filters.AbpExceptionFilterAttribute - Abp.UI.UserFriendlyException: 你添加的微博https;//twitter.com/sdfsfe已经存在，不能重复添加
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 174
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+Abp.UI.UserFriendlyException: 你添加的微博https;//twitter.com/sdfsfe已经存在，不能重复添加
+   在 StarBlogs.Stars.StarAppService.CreateStar(CreateUpdateStarInput input) 位置 d:\Projects\StarBlogs\StarBlogs.Application\Stars\StarAppService.cs:行号 174
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar_callback(CreateUpdateStarInput input)
+   在 Castle.Proxies.Invocations.IStarAppService_CreateStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 82
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 42
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Auditing\AuditingInterceptor.cs:行号 65
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 21
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.StarAppServiceProxy.CreateStar(CreateUpdateStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy.CreateStar(CreateUpdateStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DyanamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\Programming\ABP\aspnetboilerplate-master\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DyanamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+INFO  2015-08-15 20:26:02,585 [10   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='ddfd' Nickname='dfgdfg' ChineseName='dfgdfg' Sex=''
+Description : dfgdg
+BlogUrl='https://twitter.com/sdfsfesdfsf'

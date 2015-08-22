@@ -25,6 +25,12 @@ namespace StarBlogs.Web.Controllers
         public AccountController(UserManager userManager)
         {
             _userManager = userManager;
+            _userManager.UserValidator = new OptionalUserValidation(_userManager)
+            {
+                //允许用户名使用中文，设为false，只允许大小写、数字和@、下划线，设为true
+                AllowOnlyAlphanumericUserNames = true,
+                RequireUniqueEmail = false
+            };
         }
         [HttpPost]
         [AllowAnonymous]

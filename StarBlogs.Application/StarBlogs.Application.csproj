@@ -53,6 +53,22 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Ivony.Core, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ivony.Core.1.1.1\lib\Ivony.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ivony.Html, Version=3.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Jumony.Core.3.0.15\lib\Ivony.Html.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ivony.Html.Parser, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Jumony.Core.3.0.15\lib\Ivony.Html.Parser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ivony.Html.Parser.Regulars, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Jumony.Core.3.0.15\lib\Ivony.Html.Parser.Regulars.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -100,6 +116,8 @@
     <Compile Include="Blogs\Dtos\PostDto.cs" />
     <Compile Include="Blogs\Dtos\PostWithBlogDto.cs" />
     <Compile Include="Blogs\Dtos\PostWithBlogOfStarDto.cs" />
+    <Compile Include="Scrawler\HttpWebRequestFactory.cs" />
+    <Compile Include="Scrawler\TwitterScawler.cs" />
     <Compile Include="Stars\Dtos\CreateUpdateTagSettingInput.cs" />
     <Compile Include="Stars\Dtos\StarWithBlogsDto.cs" />
     <Compile Include="Blogs\IBlogAppService.cs" />
@@ -155,6 +173,7 @@
       <Name>StarBlogs.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

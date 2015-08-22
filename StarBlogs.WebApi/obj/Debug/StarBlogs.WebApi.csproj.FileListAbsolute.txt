@@ -55,3 +55,10 @@ D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Abp.Zero.pdb
 D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Abp.Zero.xml
 D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\EntityFramework.dll
 D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\EntityFramework.xml
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Html.Parser.dll
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Html.dll
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Core.dll
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Html.Parser.Regulars.dll
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Html.Parser.xml
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Html.xml
+D:\Projects\StarBlogs\StarBlogs.WebApi\bin\Debug\Ivony.Core.xml

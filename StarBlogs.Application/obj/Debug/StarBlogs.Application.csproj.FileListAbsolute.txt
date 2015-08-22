@@ -47,3 +47,10 @@ D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\EntityFramework.xml
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Abp.EntityFramework.pdb
 D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Abp.EntityFramework.xml
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Core.dll
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Html.dll
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Html.Parser.dll
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Html.Parser.Regulars.dll
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Core.xml
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Html.xml
+D:\Projects\StarBlogs\StarBlogs.Application\bin\Debug\Ivony.Html.Parser.xml

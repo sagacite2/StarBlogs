@@ -6,6 +6,7 @@ using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Zero.Configuration;
+using Microsoft.AspNet.Identity;
 using StarBlogs.Authorization;
 using StarBlogs.MultiTenancy;
 
@@ -34,6 +35,8 @@ namespace StarBlogs.Users
                 userManagementConfig,
                 iocResolver)
         {
+           
+
         }
     }
 }
