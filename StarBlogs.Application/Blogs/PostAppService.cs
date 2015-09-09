@@ -31,6 +31,7 @@ namespace StarBlogs.Blogs
             IRepository<Picture> pictureRepository, 
             IUnitOfWorkManager unitOfWorkManager)
         {
+            
             _userRepository = userRepository;
             _postRepository = postRepository;
             _pictureRepository = pictureRepository;
@@ -43,6 +44,7 @@ namespace StarBlogs.Blogs
         [AbpAuthorize(PermissionNames.CanManageStars)]
         public void DeletePost(DeletePostInput input)
         {
+           
              var post = _postRepository.Get(input.Id);
             if(post==null)
                 throw new UserFriendlyException("错误的博文ID");

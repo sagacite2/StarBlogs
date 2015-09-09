@@ -26,6 +26,8 @@
            }
        };
        vm.cancel = function () {
+           
            $modalInstance.dismiss('cancel');
+           
        };
    }]);

@@ -79,6 +79,7 @@
                 };
             }
             vm.cancel = function () {
+                console.log('dd');
                 $modalInstance.dismiss('cancel');
             };
             $scope.showBlogsDialog = function () {
