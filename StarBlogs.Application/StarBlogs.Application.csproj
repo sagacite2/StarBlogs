@@ -72,9 +72,9 @@
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx">
       <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\net45\Nito.AsyncEx.dll</HintPath>
@@ -152,21 +152,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Programming\ABP\aspnetboilerplate-master\src\Abp.AutoMapper\Abp.AutoMapper.csproj">
+    <ProjectReference Include="..\ABP.Zero\src\Abp.Zero\Abp.Zero.csproj">
+      <Project>{70d916f2-9bff-43da-b3f7-3e0655114d48}</Project>
+      <Name>Abp.Zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ABP\src\Abp.AutoMapper\Abp.AutoMapper.csproj">
       <Project>{06eb5f7c-b974-4775-a305-f175d645f7c9}</Project>
       <Name>Abp.AutoMapper</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Programming\ABP\aspnetboilerplate-master\src\Abp\Abp.csproj">
+    <ProjectReference Include="..\ABP\src\Abp\Abp.csproj">
       <Project>{2c221d3b-5f54-4c5b-8082-318636415132}</Project>
       <Name>Abp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Programming\ABP\module-zero-master\src\Abp.Zero.EntityFramework\Abp.Zero.EntityFramework.csproj">
-      <Project>{b728e703-345b-4553-a8b0-b28bb6738688}</Project>
-      <Name>Abp.Zero.EntityFramework</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Programming\ABP\module-zero-master\src\Abp.Zero\Abp.Zero.csproj">
-      <Project>{70d916f2-9bff-43da-b3f7-3e0655114d48}</Project>
-      <Name>Abp.Zero</Name>
     </ProjectReference>
     <ProjectReference Include="..\StarBlogs.Core\StarBlogs.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>

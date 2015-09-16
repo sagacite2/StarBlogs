@@ -9,6 +9,7 @@ using Abp.Zero.Configuration;
 using Microsoft.AspNet.Identity;
 using StarBlogs.Authorization;
 using StarBlogs.MultiTenancy;
+using Abp.Runtime.Caching;
 
 namespace StarBlogs.Users
 {
@@ -23,7 +24,8 @@ namespace StarBlogs.Users
             IUnitOfWorkManager unitOfWorkManager,
             ISettingManager settingManager,
             IUserManagementConfig userManagementConfig,
-            IIocResolver iocResolver)
+            IIocResolver iocResolver,
+            ICacheManager cacheManager)
             : base(
                 store,
                 roleManager,
@@ -33,7 +35,8 @@ namespace StarBlogs.Users
                 unitOfWorkManager,
                 settingManager,
                 userManagementConfig,
-                iocResolver)
+                iocResolver,
+                cacheManager)
         {
            
 

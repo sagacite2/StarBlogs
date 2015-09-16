@@ -4,6 +4,7 @@ using Abp.Domain.Uow;
 using Abp.Zero.Configuration;
 using StarBlogs.MultiTenancy;
 using StarBlogs.Users;
+using Abp.Runtime.Caching;
 
 namespace StarBlogs.Authorization
 {
@@ -13,12 +14,12 @@ namespace StarBlogs.Authorization
             RoleStore store,
             IPermissionManager permissionManager,
             IRoleManagementConfig roleManagementConfig,
-            IUnitOfWorkManager unitOfWorkManager)
+            ICacheManager cacheManager)
             : base(
                 store,
                 permissionManager,
                 roleManagementConfig,
-                unitOfWorkManager)
+                cacheManager)
         {
         }
     }

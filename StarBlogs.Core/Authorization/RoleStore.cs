@@ -3,6 +3,7 @@ using Abp.Authorization.Users;
 using Abp.Domain.Repositories;
 using StarBlogs.MultiTenancy;
 using StarBlogs.Users;
+using Abp.Runtime.Caching;
 
 namespace StarBlogs.Authorization
 {
@@ -11,11 +12,13 @@ namespace StarBlogs.Authorization
         public RoleStore(
             IRepository<Role> roleRepository,
             IRepository<UserRole, long> userRoleRepository,
-            IRepository<RolePermissionSetting, long> rolePermissionSettingRepository)
+            IRepository<RolePermissionSetting, long> rolePermissionSettingRepository,
+            ICacheManager cacheManager)
             : base(
                 roleRepository,
                 userRoleRepository,
-                rolePermissionSettingRepository)
+                rolePermissionSettingRepository,
+                cacheManager)
         {
         }
     }

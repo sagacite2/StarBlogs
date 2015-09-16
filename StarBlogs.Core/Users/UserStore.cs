@@ -4,6 +4,7 @@ using Abp.Domain.Uow;
 using Abp.Runtime.Session;
 using StarBlogs.Authorization;
 using StarBlogs.MultiTenancy;
+using Abp.Runtime.Caching;
 
 namespace StarBlogs.Users
 {
@@ -15,16 +16,17 @@ namespace StarBlogs.Users
             IRepository<UserRole, long> userRoleRepository,
             IRepository<Role> roleRepository,
             IRepository<UserPermissionSetting, long> userPermissionSettingRepository,
-            IAbpSession session,
-            IUnitOfWorkManager unitOfWorkManager)
+            IUnitOfWorkManager unitOfWorkManager,
+            ICacheManager cacheManager)
             : base(
                 userRepository,
                 userLoginRepository,
                 userRoleRepository,
                 roleRepository,
                 userPermissionSettingRepository,
-                session,
-                unitOfWorkManager)
+                unitOfWorkManager,
+                cacheManager
+            )
         {
         }
     }
