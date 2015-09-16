@@ -14,8 +14,10 @@
             //vm.stars = [];
             vm.sorting = 'CreationTime Desc';
             vm.starId = -1;
+
             vm.pageNumber = 1;          //每页数量
             vm.pageBodyNumber = 7;
+
             vm.maxCount = vm.totalStarCount != null ? vm.totalStarCount : 1;
             vm.loadStars = function (append, page) {
                 page = page > 0 ? page : 0;
@@ -37,53 +39,36 @@
                            }
                        } else {
                            vm.stars = data.items;
-                       }
+                       }                      
                        vm.totalStarCount = data.totalCount;
+                       //分页
                        vm.pageNumberAll = [];
                        vm.pageFos = page;
                        vm.maxpageBodyNumber;
                        vm.pageLength = vm.maxCount = Math.ceil(vm.totalStarCount / vm.pageNumber);
-
                         if (vm.pageLength <= vm.pageBodyNumber) {
                             vm.pageFos = 0;
-                            vm.maxpageBodyNumber = vm.pageLength;
-                            
-
+                            vm.maxpageBodyNumber = vm.pageLength;                      
                         }
                        else{
                            if (page + vm.pageBodyNumber > vm.pageLength) {
                                vm.pageFos = page - ((page + vm.pageBodyNumber) - vm.pageLength);
                                vm.maxpageBodyNumber = vm.pageFos + vm.pageBodyNumber;
                            } else {
-
                                if (vm.pageFos < Math.ceil(vm.pageBodyNumber / 2) - 1) {
-
-
                                    vm.pageFos = (vm.pageFos + 1) - Math.ceil(vm.pageBodyNumber / 2);
-
                                    vm.pageFos = 0;
-
-
                                    vm.maxpageBodyNumber = vm.pageBodyNumber;
-
                                }else {
-
                                    vm.pageFos = (vm.pageFos + 1) - Math.ceil(vm.pageBodyNumber / 2);
-
                                    vm.maxpageBodyNumber = vm.pageFos + vm.pageBodyNumber;
                                }
-
-
                            }
                         }
                        for (var i = vm.pageFos; i < vm.maxpageBodyNumber; i++) {
                            vm.pageNumberAll.push({ id: i + 1 });
                        }
-
-
-
-
-
+                       //分页end
                    })
                 );
             };
@@ -213,6 +198,7 @@
 
 
             }
+            
 
             vm.clickPaga(0);
 

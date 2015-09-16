@@ -111,7 +111,7 @@ namespace StarBlogs.Blogs
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public PagedResultOutput<PostDto> GetPostsForAll(GetAllPostInput input)
+        public PagedResultOutput<PostWithBlogOfStarDto> GetPostsForAll(GetAllPostInput input)
         {
             if (input.MaxResultCount <= 0)
             {
@@ -122,15 +122,17 @@ namespace StarBlogs.Blogs
                 _postRepository
                     .GetAll()
                     .Where(r => !r.IsBlocked)
-                    .Include(q => q.Pictures)
+                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
 
-            return new PagedResultOutput<PostDto>
+            return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
         }
         /// <summary>
@@ -139,7 +141,7 @@ namespace StarBlogs.Blogs
         /// <param name="input"></param>
         /// <returns></returns>
         [AbpAuthorize(PermissionNames.CanManageStars)]
-        public PagedResultDto<PostDto> GetPostsByStar(GetPostByStarInput input)
+        public PagedResultDto<PostWithBlogOfStarDto> GetPostsByStar(GetPostByStarInput input)
         {
             if (input.MaxResultCount <= 0)
             {
@@ -150,14 +152,17 @@ namespace StarBlogs.Blogs
                 _postRepository
                     .GetAll()
                     .Where(r => r.StarId == input.StarId)
-                    .Include(q => q.Pictures)
+                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
+                    .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
 
-            return new PagedResultOutput<PostDto>
+            return new PagedResultDto<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
         }
         /// <summary>
@@ -165,7 +170,7 @@ namespace StarBlogs.Blogs
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public PagedResultDto<PostDto> GetPostsByStarForAll(GetPostByStarInput input)
+        public PagedResultDto<PostWithBlogOfStarDto> GetPostsByStarForAll(GetPostByStarInput input)
         {
             if (input.MaxResultCount <= 0)
             {
@@ -177,13 +182,16 @@ namespace StarBlogs.Blogs
                     .GetAll()
                     .Where(r => r.StarId == input.StarId && !r.IsBlocked)
                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
+                    .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
 
-            return new PagedResultOutput<PostDto>
+            return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
         }
     }

@@ -15,8 +15,8 @@ namespace StarBlogs.Blogs
         void BlockPost(BlockPostInput input);
         void DeletePicture(DeletePictureInput input);
         PagedResultOutput<PostWithBlogOfStarDto> GetPosts(GetAllPostInput input);
-        PagedResultOutput<PostDto> GetPostsForAll(GetAllPostInput input);
-        PagedResultDto<PostDto> GetPostsByStar(GetPostByStarInput input);
-        PagedResultDto<PostDto> GetPostsByStarForAll(GetPostByStarInput input);
+        PagedResultOutput<PostWithBlogOfStarDto> GetPostsForAll(GetAllPostInput input);
+        PagedResultDto<PostWithBlogOfStarDto> GetPostsByStar(GetPostByStarInput input);
+        PagedResultDto<PostWithBlogOfStarDto> GetPostsByStarForAll(GetPostByStarInput input);
     }
 }
