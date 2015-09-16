@@ -141,6 +141,10 @@
     <Compile Include="Migrations\201508120628529_FixAbpUser.Designer.cs">
       <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201509160527463_9.16migration.cs" />
+    <Compile Include="Migrations\201509160527463_9.16migration.Designer.cs">
+      <DependentUpon>201509160527463_9.16migration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Data\InitialDataBuilder.cs" />
     <Compile Include="StarBlogsDataModule.cs" />
@@ -212,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508120628529_FixAbpUser.resx">
       <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509160527463_9.16migration.resx">
+      <DependentUpon>201509160527463_9.16migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

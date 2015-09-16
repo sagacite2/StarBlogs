@@ -1,6 +1,26 @@
 ﻿@{
     ViewBag.ActiveMenu = "Manage"; //The menu item will be active for this page.
 }
+<style>
+    .delPic{ position: relative; margin: 10px auto; width:599px; height:407px;}
+    .delPic img{ position: absolute; width:599px; height:407px; z-index: 0;}
+    .delPic .dp_b{ position: absolute; display: block; transition: all 0.5s;-moz-transition:all 0.5s; /* Firefox 4 */-webkit-transition:all 0.5s; /* Safari and Chrome */-o-transition:all 0.5s; /* Opera */  background-color:#fff; z-index: 2;}
+    .delPic .dp_b_top{ width: 0; height: 15px; top: 0px; left:-50px;}
+    .delPic .dp_b_right{ height: 0; width: 15px; top: -100px; right: 0px;}
+    .delPic .dp_b_bottom{ width: 0;height: 15px; bottom:0px; right: -100px; }
+    .delPic .dp_b_left{ height:  0;width: 15px; bottom: -100px; left: 0;}
+    .delPic:hover .dp_b_top{width: 100%;  left: 0px;}
+    .delPic:hover .dp_b_right{height: 100%; top:0px; }
+    .delPic:hover .dp_b_bottom{ width:  100%; right: 0;}
+    .delPic:hover .dp_b_left{ height:  100%; bottom: 0px;}
+    .delPic .de_op_box{ opacity: 0; top: 0; left: 0; width: 100%; height: 100%; transition: all 0.5s 0.5s;-moz-transition:all 0.5s 0.5s; /* Firefox 4 */-webkit-transition:all 0.5s 0.5s; /* Safari and Chrome */-o-transition:all 0.5s 0.5s; /* Opera */ position: absolute; z-index: 1; background-color: rgba(0,0,0,0.5);}
+    .delPic:hover .de_op_box{ opacity: 1;}
+    .delPic .btn_de{opacity: 0; top:42%; cursor:pointer; z-index: 2;box-shadow: 0px 0px 3px 5px rgba(255,255,255,0.5); font-size: 18px; border-radius: 20em; width: 30%; height:50px;position: absolute;text-align: center; line-height: 50px; color: white; transition: all 0.5s 0.5s; -moz-transition:all 0.5s 0.5s; /* Firefox 4 */-webkit-transition:all 0.5s 0.5s; /* Safari and Chrome */-o-transition:all 0.5s 0.5s; /* Opera */}
+    .delPic .btn_de a{ text-decoration:none; color: #ffffff; display:block;}
+    .delPic .btn_de_url{  left: 10%; background: #5CCA6C; border:3px solid #469652;    }
+    .delPic .btn_de_delects{  right: 10%; background: #DA2332; border:3px solid #A11D27;}
+    .delPic:hover .btn_de{opacity: 1;}
+</style>
 <div ng-controller="app.views.stars.post as vm">
     <div class="row">
         <div class="col-lg-11 col-md-10 col-sm-9 col-xs-12">
@@ -19,7 +39,24 @@
                     <p>来自：<a href="#" target="_blank">{{post.blog.star.chineseName}} ({{post.blog.star.name}})</a> <span ng-show="post.blog.star.isBlocked" class="label label-default">已屏蔽</span>   {{post.postTime| fromNow}}</p>
                     <p>微博主页：<i class="fa fa-{{post.blog.providerName}}"></i><a target="_blank" href="{{post.blog.url}}"> {{post.blog.url}}</a></p>
                     <p>原文：{{post.content}}<span ng-show="post.isBlocked" class="label label-default">博文已屏蔽</span></p>
-                    <p>附图：<div ng-repeat="pic in post.pictures"><a href="{{pic.url}}" target="_blank"><img src="{{pic.url}}" /></a></div></p>
+                    <p>
+                        附图：
+                        <!--<div class="delPic"  ng-repeat="pic in post.pictures" >
+                            <a href="{{pic.url}}" target="_blank">
+                                <img src="{{pic.url}}" style="z-index:2;" />
+                            </a>
+                        </div>-->
+                        <div class="delPic" ng-repeat="pic in post.pictures">
+                            <img src="{{pic.url}}" />
+                            <span class="de_op_box"></span>
+                            <span class="dp_b dp_b_top"></span>
+                            <span class="dp_b dp_b_right"></span>
+                            <span class="dp_b dp_b_bottom"></span>
+                            <span class="dp_b dp_b_left"></span>
+                            <a href="{{pic.url}}" target="_blank"><span class="btn_de btn_de_url">查看Url</span></a>
+                            <span class="btn_de btn_de_delects" ng-click="vm.deletePictureCon(pic.id)">删除</span>
+                        </div>
+                    </p>
                     <p>初译：{{post.defaultTranslate}}</p>
                     <p>
                         管理操作：
@@ -31,6 +68,9 @@
                         </a>
                         <a class="btn btn-primary btn-sm" href="#" role="button" ng-click="vm.loadTranslateByPostId(post.id)">
                             译文 &raquo;
+                        </a>
+                        <a ng-show="!post.isBlocked" class="btn btn-danger btn-sm" href="#" role="button" ng-click="vm.deletePost(post.id)">
+                            删除 &raquo;
                         </a>
                     </p>
 
