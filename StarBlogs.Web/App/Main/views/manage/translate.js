@@ -40,7 +40,6 @@
                 if (confirm("确认要删除？")) {
                     postService.deletePicture({ id: postid }).success(function () {
                         vm.loadPosts();
-                        alert('成功删除该图片');
                     })
 
                 }
@@ -59,7 +58,6 @@
                     postService.deletePost({ id: postId })
                            .success(function () {
                                vm.loadPosts();
-                               alert('成功删除该博文');
                            });
 
                 }
