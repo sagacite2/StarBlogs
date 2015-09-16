@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Dynamic;
+using System;
 
 namespace StarBlogs.Blogs
 {
@@ -24,17 +25,20 @@ namespace StarBlogs.Blogs
         private readonly IRepository<User, long> _userRepository;
         private readonly IRepository<OriginalPost> _postRepository;
         private readonly IRepository<Picture> _pictureRepository;
+        private readonly IRepository<Blog> _blogRepository;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         public PostAppService(
             IRepository<User, long> userRepository,
             IRepository<OriginalPost> postRepository,
             IRepository<Picture> pictureRepository, 
+             IRepository<Blog> blogRepository,
             IUnitOfWorkManager unitOfWorkManager)
         {
             
             _userRepository = userRepository;
             _postRepository = postRepository;
             _pictureRepository = pictureRepository;
+            _blogRepository = blogRepository;
             _unitOfWorkManager = unitOfWorkManager;
         }
         /// <summary>
@@ -185,6 +189,25 @@ namespace StarBlogs.Blogs
                 TotalCount = postCount,
                 Items = posts.MapTo<List<PostDto>>()
             };
+        }
+        /// <summary>
+        /// 添加一条博文
+        /// </summary>
+        /// <param name="input"></param>
+        public void CreateUpdatePost(CreateUpdatePostInput input)
+        {
+            var blog = _blogRepository.Get(input.BlogId);
+            if (blog != null)
+            {
+                var post = new OriginalPost();
+                post.Content = input.Content;
+                post.DefaultTranslate = input.DefaultTranslate;
+                post.IsBlocked = false;
+                post.PostTime = DateTime.Now;
+                post.StarId = blog.StarId;
+                post.BlogId = blog.Id;
+                _postRepository.Insert(post);
+            }
         }
     }
 }
