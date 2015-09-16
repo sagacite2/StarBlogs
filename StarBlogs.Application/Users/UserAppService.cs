@@ -34,7 +34,10 @@ namespace StarBlogs.Users
                 var result = await _userManager.CreateAsync(new User
                 {
                     Name = input.UserName,
-                    Password = input.Password
+                    Password = input.Password,
+                    Surname = "",
+                    UserName = input.UserName,
+                    EmailAddress = "default@undefined.com"
 
                 });
                 if (result.Succeeded)
