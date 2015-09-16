@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.ActiveMenu = "Manage"; //The menu item will be active for this page.
 }
-<div ng-controller="app.views.stars.index as vm">
+<div ng-controller="app.views.stars.index as vm" class="starsCsii">
     <div class="row">
         <div class="col-lg-9 col-md-7 col-sm-5 col-xs-12">
             <ol class="breadcrumb">
@@ -60,22 +60,16 @@
     <nav>
         <ul class="pagination">
             <li>
-                <a href="#" aria-label="Previous">
+                <a href="#" aria-label="Previous" ng-click="vm.clickPaga(true)">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#">10</a></li>
+            <!--<li class="active pageItem"><a href="#">1</a></li>-->
+
+            <li ng-class="{active:page.id==vm.currentPage}" class="pageItem" ng-repeat="page in vm.pageNumberAll"><a ng-click="vm.clickPaga(page.id)">{{page.id}}</a></li>
+
             <li>
-                <a href="#" aria-label="Next">
+                <a href="#" aria-label="Next" ng-click="vm.clickPaga(false)">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
