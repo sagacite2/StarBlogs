@@ -30,12 +30,9 @@ namespace StarBlogs.Blogs
         public PostAppService(
             IRepository<User, long> userRepository,
             IRepository<OriginalPost> postRepository,
-<<<<<<< HEAD
             IRepository<Picture> pictureRepository, 
              IRepository<Blog> blogRepository,
-=======
-            IRepository<Picture> pictureRepository,
->>>>>>> origin/master
+
             IUnitOfWorkManager unitOfWorkManager)
         {
 

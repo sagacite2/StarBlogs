@@ -141,15 +141,10 @@
     <Compile Include="Migrations\201508120628529_FixAbpUser.Designer.cs">
       <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Migrations\201509160552282_9.16migration.cs" />
-    <Compile Include="Migrations\201509160552282_9.16migration.Designer.cs">
-      <DependentUpon>201509160552282_9.16migration.cs</DependentUpon>
-=======
+
     <Compile Include="Migrations\201509160527463_9.16migration.cs" />
     <Compile Include="Migrations\201509160527463_9.16migration.Designer.cs">
       <DependentUpon>201509160527463_9.16migration.cs</DependentUpon>
->>>>>>> origin/master
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Data\InitialDataBuilder.cs" />
@@ -223,13 +218,9 @@
     <EmbeddedResource Include="Migrations\201508120628529_FixAbpUser.resx">
       <DependentUpon>201508120628529_FixAbpUser.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Migrations\201509160552282_9.16migration.resx">
-      <DependentUpon>201509160552282_9.16migration.cs</DependentUpon>
-=======
+
     <EmbeddedResource Include="Migrations\201509160527463_9.16migration.resx">
       <DependentUpon>201509160527463_9.16migration.cs</DependentUpon>
->>>>>>> origin/master
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
