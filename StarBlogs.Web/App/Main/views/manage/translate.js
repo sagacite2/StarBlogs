@@ -1,7 +1,7 @@
 ﻿(function () {
     var controllerId = 'app.views.stars.post';
     angular.module('app')
-        .controller(controllerId, ['abp.services.app.post', '$modal', function (postService,  $modal) {
+        .controller(controllerId, ['abp.services.app.post', '$modal', function (postService, $modal) {
             var vm = this;
             vm.showing = 'NewPosts';
             vm.sortingDirections = ['PostTime Asc', 'PostTime Desc'];
@@ -21,17 +21,32 @@
                        skipCount: skipCount,
                        sorting: vm.sorting
                    }).success(function (data) {
+                       console.log(data)
                        if (append) {
                            data.items.forEach(function (item) {
                                vm.posts.push(item);
                            });
+
                        } else {
                            vm.posts = data.items;
                        }
                        vm.totalPostCount = data.totalCount;
                    })
                 );
+
             };
+
+            vm.deletePictureCon = function (postid) {
+                if (confirm("确认要删除？")) {
+                    postService.deletePicture({ id: postid }).success(function () {
+                        vm.loadPosts();
+                        alert('成功删除该图片');
+                    })
+
+                }
+
+            }
+
             vm.blockPost = function (postId, isBlocked) {
                 postService.blockPost({ id: postId, isBlocked: isBlocked })
                            .success(function () {
@@ -39,10 +54,16 @@
                            });
             };
             vm.deletePost = function (postId) {
-                starService.deletePost({ id: postId })
+
+                if (confirm("确认要删除？")) {
+                    postService.deletePost({ id: postId })
                            .success(function () {
                                vm.loadPosts();
+                               alert('成功删除该博文');
                            });
+
+                }
+
             };
             vm.loadTranslate = function (append) {
 
@@ -89,6 +110,35 @@
                         vm.loadTranslate();
                 }
             }
+
+
             vm.loadTranslate();
+
         }]);
+
+
+
+    angular.module('app').controller('test', ['$scope', 'abp.services.app.post', function ($scope, testServices) {
+
+
+        testServices.getPosts({ skipCount: 0, sorting: 'PostTime Desc' }).success(function (data) {
+            console.log(data)
+            $scope.items = data
+
+        }).error(function (data) {
+            console.log('失败')
+        });
+
+        $scope.delectTest = function (id) {
+
+            testServices.deletePost(id);
+            console.log('成功删除')
+
+        }
+
+
+
+    }])
+
+
 })();

@@ -28,10 +28,10 @@ namespace StarBlogs.Blogs
         public PostAppService(
             IRepository<User, long> userRepository,
             IRepository<OriginalPost> postRepository,
-            IRepository<Picture> pictureRepository, 
+            IRepository<Picture> pictureRepository,
             IUnitOfWorkManager unitOfWorkManager)
         {
-            
+
             _userRepository = userRepository;
             _postRepository = postRepository;
             _pictureRepository = pictureRepository;
@@ -44,12 +44,12 @@ namespace StarBlogs.Blogs
         [AbpAuthorize(PermissionNames.CanManageStars)]
         public void DeletePost(DeletePostInput input)
         {
-           
-             var post = _postRepository.Get(input.Id);
-            if(post==null)
+
+            var post = _postRepository.Get(input.Id);
+            if (post == null)
                 throw new UserFriendlyException("错误的博文ID");
             var pics = post.Pictures;
-             for (int i = 0; i > pics.Count() - 1; i--)
+            for (int i = pics.Count(); i > 0; i--)
             {
                 _pictureRepository.Delete(pics.Last());
             }
@@ -63,7 +63,7 @@ namespace StarBlogs.Blogs
         public void BlockPost(BlockPostInput input)
         {
             var post = _postRepository.Get(input.Id);
-            if(post==null)
+            if (post == null)
                 throw new UserFriendlyException("错误的博文ID");
             post.IsBlocked = input.IsBlocked;
             //_unitOfWorkManager.Current.SaveChanges();
@@ -94,7 +94,7 @@ namespace StarBlogs.Blogs
                 _postRepository
                     .GetAll()
                     .Include(q => q.Pictures)
-                    .Include(q=>q.Blog)
+                    .Include(q => q.Blog)
                     .Include("Blog.Star")
                     .OrderBy(input.Sorting)
                     .PageBy(input)
@@ -121,7 +121,7 @@ namespace StarBlogs.Blogs
             var posts =
                 _postRepository
                     .GetAll()
-                    .Where(r=>!r.IsBlocked)
+                    .Where(r => !r.IsBlocked)
                     .Include(q => q.Pictures)
                     .OrderBy(input.Sorting)
                     .PageBy(input)
@@ -149,7 +149,7 @@ namespace StarBlogs.Blogs
             var posts =
                 _postRepository
                     .GetAll()
-                    .Where(r=>r.StarId == input.StarId)
+                    .Where(r => r.StarId == input.StarId)
                     .Include(q => q.Pictures)
                     .PageBy(input)
                     .ToList();
