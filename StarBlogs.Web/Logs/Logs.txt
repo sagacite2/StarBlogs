@@ -3398,3 +3398,43 @@ DEBUG 2015-09-16 13:12:10,230 [1    ] Default                                  -
 DEBUG 2015-09-16 13:12:10,231 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
 DEBUG 2015-09-16 13:12:10,231 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
 >>>>>>> origin/FenZhi_Li
+DEBUG 2015-09-16 13:55:17,462 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-16 13:55:18,734 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-16 13:55:18,738 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,739 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,740 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-16 13:55:18,743 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-16 13:55:19,983 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-16 13:55:19,988 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-16 13:55:19,988 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-16 13:55:19,989 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-16 13:55:19,989 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-16 13:55:20,964 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-16 13:55:20,964 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-16 13:55:21,076 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-16 13:55:21,080 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-16 13:55:21,082 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-16 13:55:21,088 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-16 13:55:21,091 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-16 13:55:21,094 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-16 13:55:21,108 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-16 13:55:21,113 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-16 13:55:21,114 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-16 13:55:21,116 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-16 13:55:21,121 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-16 13:55:21,125 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-16 13:55:21,146 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-16 13:55:21,147 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-16 13:55:21,148 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-16 13:55:21,148 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-16 13:55:21,149 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
