@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Authorization\StarAuthorizationProvider.cs" />
     <Compile Include="Blogs\BlogAppService.cs" />
+    <Compile Include="Blogs\Dtos\AddPostInput.cs" />
     <Compile Include="Blogs\Dtos\BlockPostInput.cs" />
     <Compile Include="Blogs\Dtos\BlogDto.cs" />
     <Compile Include="Blogs\Dtos\BlogWithStarDto.cs" />

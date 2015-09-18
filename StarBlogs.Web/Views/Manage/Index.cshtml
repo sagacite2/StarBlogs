@@ -38,7 +38,7 @@
                 简介：{{star.description}}
             </p>
             <p>创建时间：<span class="text-muted">{{star.creationTime | fromNow}}</span></p>
-            <p ng-repeat="blog in star.blogs"><i class="fa fa-{{blog.providerName}}"></i><a target="_blank" href="{{blog.url}}"> {{blog.url}}</a> </p>
+            <p ng-repeat="blog in star.blogs"><i class="fa fa-{{blog.providerName}}"></i><a target="_blank" href="{{blog.url}}"> {{blog.url}}</a> {{blog.id}}</p>
             <p>标签：<span ng-repeat="tag in star.tags" class="label label-default">{{vm['tagName' + tag.tagId] }}</span> <a class="btn btn-success btn-xs" href="#" role="button" ng-click="showAddTagDialog(star.id)">管理标签 &raquo;</a></p>
             <p>
                 <a class="btn btn-primary btn-sm" href="#" role="button" ng-click="showEditStarDialog(star.id)">修改 &raquo;</a>

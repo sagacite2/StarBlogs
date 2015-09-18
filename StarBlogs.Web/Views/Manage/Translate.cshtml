@@ -76,7 +76,25 @@
 
                     <hr />
                 </div>
+                
             </div>
+            <!--分页-->
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous" ng-click="vm.clickPaga(true)">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                <li ng-class="{active:page.id==vm.currentPage}" class="pageItem" ng-repeat="page in vm.pageNumberAll"><a ng-click="vm.clickPaga(page.id)">{{page.id}}</a></li>
+
+                <li>
+                    <a href="#" aria-label="Next" ng-click="vm.clickPaga(false)">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+            <!--分页end-->
         </div>
 
         <div class="col-lg-8" ng-show="vm.showing=='NewTranslates'">
@@ -91,6 +109,7 @@
         <div class="col-lg-4">
             <p><a href="#" ng-click="vm.switchShow('NewPosts')">最近发表的博文</a></p>
             <p><a href="#" ng-click="vm.switchShow('NewTranslates')">最近添加的译文</a></p>
+            <p ng-repeat="stname in vm.starName"><a href="#" ng-click="vm.getPostsByStarMxBw(stname.id,0)">{{stname.blogId}}{{stname.name}}</a></p>
         </div>
     </div>
 </div>

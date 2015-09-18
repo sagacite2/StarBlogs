@@ -5004,6 +5004,7 @@ DEBUG 2015-09-16 15:33:39,756 [1    ] Default                                  -
 DEBUG 2015-09-16 15:33:39,756 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
 DEBUG 2015-09-16 15:33:39,757 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
 >>>>>>> origin/master
+<<<<<<< HEAD
 DEBUG 2015-09-16 17:45:23,936 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
 DEBUG 2015-09-16 17:45:25,465 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
 DEBUG 2015-09-16 17:45:25,468 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
@@ -5084,3 +5085,957 @@ DEBUG 2015-09-18 12:33:18,311 [1    ] Default                                  -
 DEBUG 2015-09-18 12:33:18,312 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
 DEBUG 2015-09-18 12:33:18,312 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
 DEBUG 2015-09-18 12:33:18,313 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+=======
+DEBUG 2015-09-17 08:45:01,061 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-17 08:45:02,327 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-17 08:45:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,333 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,333 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,333 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,333 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,333 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 08:45:02,336 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-17 08:45:03,629 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-17 08:45:03,633 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-17 08:45:03,634 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-17 08:45:03,635 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-17 08:45:03,635 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-17 08:45:04,557 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-17 08:45:04,557 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-17 08:45:04,663 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-17 08:45:04,667 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-17 08:45:04,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-17 08:45:04,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-17 08:45:04,677 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-17 08:45:04,680 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-17 08:45:04,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-17 08:45:04,700 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-17 08:45:04,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-17 08:45:04,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-17 08:45:04,707 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-17 08:45:04,711 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-17 08:45:04,733 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-17 08:45:04,734 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-17 08:45:04,734 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-17 08:45:04,735 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-17 08:45:04,735 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-17 16:09:05,354 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-17 16:09:09,798 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-17 16:09:09,802 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,804 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:09,808 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-17 16:09:10,821 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-17 16:09:10,825 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-17 16:09:10,826 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-17 16:09:10,826 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-17 16:09:10,826 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-17 16:09:11,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-17 16:09:11,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-17 16:09:11,874 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-17 16:09:11,878 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-17 16:09:11,881 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-17 16:09:11,884 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-17 16:09:11,889 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-17 16:09:11,892 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-17 16:09:11,905 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-17 16:09:11,909 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-17 16:09:11,911 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-17 16:09:11,912 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-17 16:09:11,917 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-17 16:09:11,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-17 16:09:11,943 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-17 16:09:11,944 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-17 16:09:11,944 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-17 16:09:11,945 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-17 16:09:11,945 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-17 16:09:48,104 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-17 16:09:52,632 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-17 16:09:52,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,636 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,637 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,638 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:09:52,641 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-17 16:09:53,707 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-17 16:09:53,712 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-17 16:09:53,712 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-17 16:09:53,714 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-17 16:09:53,714 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-17 16:09:54,712 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-17 16:09:54,713 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-17 16:09:54,825 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-17 16:09:54,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-17 16:09:54,835 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-17 16:09:54,838 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-17 16:09:54,844 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-17 16:09:54,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-17 16:09:54,861 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-17 16:09:54,866 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-17 16:09:54,868 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-17 16:09:54,869 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-17 16:09:54,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-17 16:09:54,879 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-17 16:09:54,903 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-17 16:09:54,903 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-17 16:09:54,904 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-17 16:09:54,905 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-17 16:09:54,905 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-17 16:20:34,095 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-17 16:20:38,501 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-17 16:20:38,505 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,506 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:20:38,510 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-17 16:20:39,509 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-17 16:20:39,513 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-17 16:20:39,514 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-17 16:20:39,515 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-17 16:20:39,515 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-17 16:20:40,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-17 16:20:40,452 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-17 16:20:40,552 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-17 16:20:40,556 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-17 16:20:40,559 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-17 16:20:40,562 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-17 16:20:40,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-17 16:20:40,570 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-17 16:20:40,582 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-17 16:20:40,587 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-17 16:20:40,588 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-17 16:20:40,590 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-17 16:20:40,594 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-17 16:20:40,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-17 16:20:40,619 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-17 16:20:40,620 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-17 16:20:40,620 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-17 16:20:40,621 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-17 16:20:40,621 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+INFO  2015-09-17 16:21:27,080 [13   ] StarBlogs.Stars.StarAppService           - 添加明星的输入信息（CreateUpdateStarInput对象）: CreateUpdateStarInput:Name='sdasddsa' Nickname='是对的' ChineseName='的撒啊送达' Sex=''
+Description : 事实上是事实
+BlogUrl='www.ns.com/ss'
+DEBUG 2015-09-17 16:21:43,584 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-17 16:21:48,051 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-17 16:21:48,054 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,056 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,057 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-17 16:21:48,060 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-17 16:21:49,096 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-17 16:21:49,100 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-17 16:21:49,101 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-17 16:21:49,101 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-17 16:21:49,101 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-17 16:21:50,042 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-17 16:21:50,042 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-17 16:21:50,142 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-17 16:21:50,146 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-17 16:21:50,148 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-17 16:21:50,152 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-17 16:21:50,157 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-17 16:21:50,160 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-17 16:21:50,173 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-17 16:21:50,178 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-17 16:21:50,179 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-17 16:21:50,181 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-17 16:21:50,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-17 16:21:50,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-17 16:21:50,212 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-17 16:21:50,212 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-17 16:21:50,213 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-17 16:21:50,213 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-17 16:21:50,214 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 12:41:43,498 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 12:41:48,380 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 12:41:48,384 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,385 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,386 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,386 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,386 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,386 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,387 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:41:48,390 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 12:41:49,390 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 12:41:49,394 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 12:41:49,395 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 12:41:49,396 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 12:41:49,396 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 12:41:50,300 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 12:41:50,300 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 12:41:50,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 12:41:50,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 12:41:50,412 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 12:41:50,416 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 12:41:50,421 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 12:41:50,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 12:41:50,437 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 12:41:50,442 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 12:41:50,443 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 12:41:50,444 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 12:41:50,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 12:41:50,453 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 12:41:50,474 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 12:41:50,474 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 12:41:50,475 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 12:41:50,476 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 12:41:50,476 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 12:58:27,109 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 12:58:31,559 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 12:58:31,563 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 12:58:31,568 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 12:58:32,570 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 12:58:32,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 12:58:32,575 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 12:58:32,576 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 12:58:32,576 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 12:58:33,558 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 12:58:33,558 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 12:58:33,660 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 12:58:33,664 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 12:58:33,666 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 12:58:33,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 12:58:33,673 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 12:58:33,676 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 12:58:33,688 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 12:58:33,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 12:58:33,695 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 12:58:33,696 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 12:58:33,701 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 12:58:33,705 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 12:58:33,725 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 12:58:33,725 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 12:58:33,726 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 12:58:33,726 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 12:58:33,727 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 13:08:50,256 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 13:08:51,476 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 13:08:51,479 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,480 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,481 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:08:51,484 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 13:08:52,734 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 13:08:52,738 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 13:08:52,739 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 13:08:52,740 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 13:08:52,740 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 13:08:53,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 13:08:53,706 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 13:08:53,812 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 13:08:53,816 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 13:08:53,818 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 13:08:53,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 13:08:53,826 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 13:08:53,829 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 13:08:53,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 13:08:53,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 13:08:53,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 13:08:53,850 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 13:08:53,854 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 13:08:53,859 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 13:08:53,880 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 13:08:53,881 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 13:08:53,881 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 13:08:53,882 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 13:08:53,882 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+ERROR 2015-09-18 13:09:58,145 [12   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2015-09-18 13:10:12,212 [18   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2015-09-18 13:10:23,042 [12   ] lers.Filters.AbpExceptionFilterAttribute - System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+System.ArgumentException: Count must have a non-negative value.
+参数名: count
+   在 System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder.DbExpressionBuilder.Skip(DbExpressionBinding input, IEnumerable`1 sortOrder, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.OrderByLifterBase.ApplySortOrderToSkip(DbExpression input, DbSortExpression sort, DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.SortLifter.Skip(DbExpression k)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.OrderByLifter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Skip(DbExpressionBinding input, DbExpression skipCount)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SkipTranslator.TranslatePagingOperator(ExpressionConverter parent, DbExpression operand, DbExpression count)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.PagingTranslator.TranslateUnary(ExpressionConverter parent, DbExpression operand, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 StarBlogs.Blogs.PostAppService.GetPostsByStar(GetPostByStarInput input) 位置 d:\项目文件\项目文件\StarBlogs\StarBlogs.Application\Blogs\PostAppService.cs:行号 157
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar_callback(GetPostByStarInput input)
+   在 Castle.Proxies.Invocations.IPostAppService_GetPostsByStar.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.InterceptSync(IInvocation invocation, IEnumerable`1 authorizeAttributes) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 79
+   在 Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:行号 43
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 60
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 52
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 41
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 91
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Auditing\AuditingInterceptor.cs:行号 57
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 17
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.PostAppServiceProxy.GetPostsByStar(GetPostByStarInput input)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Interceptors.AbpDynamicApiControllerInterceptor`1.Intercept(IInvocation invocation) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Interceptors\AbpDynamicApiControllerInterceptor.cs:行号 48
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.DynamicApiController`1Proxy_1.GetPostsByStar(GetPostByStarInput input)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Abp.Extensions.ExceptionExtensions.ReThrow(Exception exception) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp\Extensions\ExceptionExtensions.cs:行号 18
+   在 Abp.WebApi.Controllers.Dynamic.Selectors.DynamicHttpActionDescriptor.<ExecuteAsync>b__0(Task`1 task) 位置 d:\项目文件\项目文件\StarBlogs\ABP\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Selectors\DynamicHttpActionDescriptor.cs:行号 56
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2015-09-18 13:11:41,184 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 13:11:45,743 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 13:11:45,746 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,748 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,749 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:11:45,752 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 13:11:46,766 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 13:11:46,770 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 13:11:46,771 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 13:11:46,771 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 13:11:46,772 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 13:11:47,697 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 13:11:47,697 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 13:11:47,801 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 13:11:47,806 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 13:11:47,808 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 13:11:47,811 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 13:11:47,817 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 13:11:47,820 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 13:11:47,833 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 13:11:47,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 13:11:47,839 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 13:11:47,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 13:11:47,845 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 13:11:47,850 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 13:11:47,870 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 13:11:47,871 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 13:11:47,872 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 13:11:47,872 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 13:11:47,873 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 13:14:11,314 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 13:14:15,805 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 13:14:15,808 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,809 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:14:15,814 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 13:14:16,787 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 13:14:16,791 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 13:14:16,792 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 13:14:16,792 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 13:14:16,793 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 13:14:17,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 13:14:17,693 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 13:14:17,795 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 13:14:17,799 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 13:14:17,802 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 13:14:17,805 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 13:14:17,810 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 13:14:17,813 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 13:14:17,825 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 13:14:17,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 13:14:17,831 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 13:14:17,832 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 13:14:17,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 13:14:17,841 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 13:14:17,862 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 13:14:17,863 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 13:14:17,863 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 13:14:17,864 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 13:14:17,864 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 13:14:59,853 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 13:15:04,334 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 13:15:04,337 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,339 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,340 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:15:04,344 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 13:15:05,353 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 13:15:05,357 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 13:15:05,358 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 13:15:05,359 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 13:15:05,359 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 13:15:06,286 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 13:15:06,286 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 13:15:06,387 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 13:15:06,392 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 13:15:06,394 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 13:15:06,397 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 13:15:06,403 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 13:15:06,406 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 13:15:06,417 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 13:15:06,423 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 13:15:06,424 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 13:15:06,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 13:15:06,430 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 13:15:06,434 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 13:15:06,455 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 13:15:06,456 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 13:15:06,456 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 13:15:06,457 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 13:15:06,458 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 13:16:43,598 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-18 13:16:48,083 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2015-09-18 13:16:48,086 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,087 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsApplicationModule, StarBlogs.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsCoreModule, StarBlogs.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsDataModule, StarBlogs.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.Web.StarBlogsWebModule, StarBlogs.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: StarBlogs.StarBlogsWebApiModule, StarBlogs.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-18 13:16:48,092 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2015-09-18 13:16:49,087 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2015-09-18 13:16:49,092 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-18 13:16:49,092 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2015-09-18 13:16:49,093 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: StarBlogs
+DEBUG 2015-09-18 13:16:49,093 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-18 13:16:49,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes defines auto mapping attributes
+DEBUG 2015-09-18 13:16:49,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogDto
+DEBUG 2015-09-18 13:16:50,098 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.BlogWithStarDto
+DEBUG 2015-09-18 13:16:50,102 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PictureDto
+DEBUG 2015-09-18 13:16:50,104 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostDto
+DEBUG 2015-09-18 13:16:50,108 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogDto
+DEBUG 2015-09-18 13:16:50,113 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Blogs.Dtos.PostWithBlogOfStarDto
+DEBUG 2015-09-18 13:16:50,116 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarDto
+DEBUG 2015-09-18 13:16:50,128 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarWithBlogsDto
+DEBUG 2015-09-18 13:16:50,133 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagDto
+DEBUG 2015-09-18 13:16:50,134 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Stars.Dtos.StarTagSettingDto
+DEBUG 2015-09-18 13:16:50,136 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationDto
+DEBUG 2015-09-18 13:16:50,140 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Translates.Dtos.TranslationWithPostDto
+DEBUG 2015-09-18 13:16:50,144 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - StarBlogs.Users.Dto.UserDto
+DEBUG 2015-09-18 13:16:50,164 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IBlogAppService' with service name 'app/blog'.
+DEBUG 2015-09-18 13:16:50,165 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Blogs.IPostAppService' with service name 'app/post'.
+DEBUG 2015-09-18 13:16:50,166 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Stars.IStarAppService' with service name 'app/star'.
+DEBUG 2015-09-18 13:16:50,166 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Translates.ITranslateAppService' with service name 'app/translate'.
+DEBUG 2015-09-18 13:16:50,167 [1    ] Default                                  - Dynamic web api controller is created for type 'StarBlogs.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2015-09-18 13:18:42,632 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+>>>>>>> origin/FenZhi_Li

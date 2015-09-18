@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Dynamic;
+using System;
 
 namespace StarBlogs.Blogs
 {
@@ -24,17 +25,21 @@ namespace StarBlogs.Blogs
         private readonly IRepository<User, long> _userRepository;
         private readonly IRepository<OriginalPost> _postRepository;
         private readonly IRepository<Picture> _pictureRepository;
+        private readonly IRepository<Blog> _blogRepository;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         public PostAppService(
             IRepository<User, long> userRepository,
             IRepository<OriginalPost> postRepository,
-            IRepository<Picture> pictureRepository,
+            IRepository<Picture> pictureRepository, 
+             IRepository<Blog> blogRepository,
+
             IUnitOfWorkManager unitOfWorkManager)
         {
 
             _userRepository = userRepository;
             _postRepository = postRepository;
             _pictureRepository = pictureRepository;
+            _blogRepository = blogRepository;
             _unitOfWorkManager = unitOfWorkManager;
         }
         /// <summary>
@@ -89,7 +94,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
@@ -99,6 +104,7 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
+            var postCount = posts.Count();
 
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
@@ -111,26 +117,28 @@ namespace StarBlogs.Blogs
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public PagedResultOutput<PostDto> GetPostsForAll(GetAllPostInput input)
+        public PagedResultOutput<PostWithBlogOfStarDto> GetPostsForAll(GetAllPostInput input)
         {
             if (input.MaxResultCount <= 0)
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
                     .Where(r => !r.IsBlocked)
-                    .Include(q => q.Pictures)
+                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
-            return new PagedResultOutput<PostDto>
+            var postCount = posts.Count();
+            return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
         }
         /// <summary>
@@ -139,25 +147,28 @@ namespace StarBlogs.Blogs
         /// <param name="input"></param>
         /// <returns></returns>
         [AbpAuthorize(PermissionNames.CanManageStars)]
-        public PagedResultDto<PostDto> GetPostsByStar(GetPostByStarInput input)
+        public PagedResultDto<PostWithBlogOfStarDto> GetPostsByStar(GetPostByStarInput input)
         {
             if (input.MaxResultCount <= 0)
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
                     .Where(r => r.StarId == input.StarId)
-                    .Include(q => q.Pictures)
+                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
+                    .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
-            return new PagedResultOutput<PostDto>
+            var postCount = posts.Count();
+            return new PagedResultDto<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
         }
         /// <summary>
@@ -165,26 +176,48 @@ namespace StarBlogs.Blogs
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public PagedResultDto<PostDto> GetPostsByStarForAll(GetPostByStarInput input)
+        public PagedResultDto<PostWithBlogOfStarDto> GetPostsByStarForAll(GetPostByStarInput input)
         {
             if (input.MaxResultCount <= 0)
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+           
             var posts =
                 _postRepository
                     .GetAll()
                     .Where(r => r.StarId == input.StarId && !r.IsBlocked)
                     .Include(q => q.Pictures)
+                    .Include(q => q.Blog)
+                    .Include("Blog.Star")
+                    .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
-            return new PagedResultOutput<PostDto>
+            var postCount = posts.Count();
+            return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
-                Items = posts.MapTo<List<PostDto>>()
+                Items = posts.MapTo<List<PostWithBlogOfStarDto>>()
             };
+        }
+        /// <summary>
+        /// 添加一条博文
+        /// </summary>
+        /// <param name="input"></param>
+        public void CreateUpdatePost(CreateUpdatePostInput input)
+        {
+            var blog = _blogRepository.Get(input.BlogId);
+            if (blog != null)
+            {
+                var post = new OriginalPost();
+                post.Content = input.Content;
+                post.DefaultTranslate = input.DefaultTranslate;
+                post.IsBlocked = false;
+                post.PostTime = DateTime.Now;
+                post.StarId = blog.StarId;
+                post.BlogId = blog.Id;
+                _postRepository.Insert(post);
+            }
         }
     }
 }
