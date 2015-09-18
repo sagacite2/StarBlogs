@@ -94,7 +94,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            
+            var postCount = _postRepository.Count();
             var posts =
                 _postRepository
                     .GetAll()
@@ -104,7 +104,6 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-            var postCount = posts.Count();
 
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
@@ -134,7 +133,9 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-            var postCount = posts.Count();
+            var postCount = _postRepository
+                    .GetAll()
+                    .Where(r => !r.IsBlocked).Count();
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
@@ -164,7 +165,9 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-            var postCount = posts.Count();
+            var postCount = _postRepository
+                    .GetAll()
+                    .Where(r => r.StarId == input.StarId).Count();
             return new PagedResultDto<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
@@ -193,7 +196,9 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-            var postCount = posts.Count();
+            var postCount = _postRepository
+                    .GetAll()
+                    .Where(r => r.StarId == input.StarId && !r.IsBlocked).Count();
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
