@@ -34,7 +34,7 @@
                        skipCount: skipCount,
                        sorting: vm.sorting
                    }).success(function (data) {
-                      
+                      console.log(data)
                        vm.posts = [];
                        if (append) {
                            data.items.forEach(function (item) {
@@ -148,7 +148,7 @@
             vm.showMore = function () {
                 switch (vm.showing) {
                     case 'NewPosts':
-                        vm.loadPosts(true,1);
+                        vm.loadPosts(true,0);
                         break;
                     default:
                         vm.loadTranslate(true);
@@ -158,7 +158,7 @@
                 vm.showing = showing;
                 switch (vm.showing) {
                     case 'NewPosts':
-                        vm.loadPosts(true,1);
+                        vm.loadPosts(true,0);
                         break;
                     default:
                         vm.loadTranslate();
@@ -193,6 +193,8 @@
                        vm.posts = [];
                        vm.posts = data.items;
                        vm.totalPostCount = data.totalCount;
+                       console.log(data)
+                       
                        //分页
                        vm.pageNumberAll = [];                       
                        vm.maxpageBodyNumber;                     
@@ -249,9 +251,12 @@
 
 
             }
+            //添加博文的测试
+            vm.addBowen = function () {
+                postService.createUpdatePost({BlogId:14,Content:'你好啊你好',DefaultTranslate:'ssss'});
+            }
 
-
-
+            //vm.addBowen();//post
             vm.starNameFunt();
             vm.loadTranslate();
 

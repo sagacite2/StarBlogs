@@ -94,7 +94,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
@@ -104,6 +104,7 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
+            var postCount = posts.Count();
 
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
@@ -122,7 +123,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
@@ -133,7 +134,7 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
+            var postCount = posts.Count();
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
@@ -152,7 +153,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+            
             var posts =
                 _postRepository
                     .GetAll()
@@ -163,7 +164,7 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
+            var postCount = posts.Count();
             return new PagedResultDto<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,
@@ -181,7 +182,7 @@ namespace StarBlogs.Blogs
             {
                 input.MaxResultCount = SettingManager.GetSettingValue<int>(MySettingProvider.PostsListDefaultPageSize);
             }
-            var postCount = _postRepository.Count();
+           
             var posts =
                 _postRepository
                     .GetAll()
@@ -192,7 +193,7 @@ namespace StarBlogs.Blogs
                     .OrderBy(input.Sorting)
                     .PageBy(input)
                     .ToList();
-
+            var postCount = posts.Count();
             return new PagedResultOutput<PostWithBlogOfStarDto>
             {
                 TotalCount = postCount,

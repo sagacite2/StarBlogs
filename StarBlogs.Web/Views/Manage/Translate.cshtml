@@ -109,7 +109,7 @@
         <div class="col-lg-4">
             <p><a href="#" ng-click="vm.switchShow('NewPosts')">最近发表的博文</a></p>
             <p><a href="#" ng-click="vm.switchShow('NewTranslates')">最近添加的译文</a></p>
-            <p ng-repeat="stname in vm.starName"><a href="#" ng-click="vm.getPostsByStarMxBw(stname.id,0)">{{stname.name}}</a></p>
+            <p ng-repeat="stname in vm.starName"><a href="#" ng-click="vm.getPostsByStarMxBw(stname.id,0)">{{stname.blogId}}{{stname.name}}</a></p>
         </div>
     </div>
 </div>
